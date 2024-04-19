@@ -1,0 +1,42 @@
+specified_files:
+#faq
+  - ../docs/zh_CN/faq/ble_adaptivity_test_faq.rst
+  - ../docs/zh_CN/faq/ble_blocking_test_faq.rst
+  - ../docs/zh_CN/faq/ble_dtm_test_faq.rst
+  - ../docs/zh_CN/faq/esp_rf_test_guide_tool_faq.rst
+  - ../docs/zh_CN/faq/flash_download_tool_faq.rst
+  - ../docs/zh_CN/faq/rf_non_signalling_test_faq.rst
+  - ../docs/zh_CN/faq/wfa_certification_test_faq.rst
+  - ../docs/zh_CN/faq/wifi_adaptivity_test_faq.rst
+  - ../docs/zh_CN/faq/wifi_blocking_test_faq.rst
+  - ../docs/zh_CN/faq/wifi_signalling_test_faq.rst
+
+#get-started
+  - ../docs/zh_CN/get-started/index.rst
+
+#rf_test_certification
+  - ../docs/zh_CN/rf_test_certification/ce_certification.rst
+  - ../docs/zh_CN/rf_test_certification/fcc_certification.rst
+  - ../docs/zh_CN/rf_test_certification/srrc_certification.rst
+  - ../docs/zh_CN/rf_test_certification/wfa_certification.rst
+
+#rf_test_items
+  - ../docs/zh_CN/rf_test_items/ble_adaptivity_test.rst
+  - ../docs/zh_CN/rf_test_items/ble_blocking_test.rst
+  - ../docs/zh_CN/rf_test_items/ble_dtm_test.rst
+  - ../docs/zh_CN/rf_test_items/rf_non_signalling_test.rst
+  - ../docs/zh_CN/rf_test_items/wfa_certification_test.rst
+  - ../docs/zh_CN/rf_test_items/wifi_adaptivity_test.rst
+  - ../docs/zh_CN/rf_test_items/wifi_blocking_test.rst
+  - ../docs/zh_CN/rf_test_items/wifi_signalling_test.rst
+
+#tool
+  - ../docs/zh_CN/tool/flash_download_tool.rst
+  - ../docs/zh_CN/tool/rf_test_guide_tool.rst
+
+target_language: EN-CN
+
+trans_dict:
+  firmware: 固件
+
+target_language_folder: ./
