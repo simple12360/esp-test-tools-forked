@@ -1,2 +1,0 @@
-SRRC Certification
-==================
