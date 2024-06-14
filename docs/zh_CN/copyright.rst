@@ -1,4 +1,4 @@
 免责声明和版权公告
 =================================================
 
-:link_to_translation:`en:[English]``
+:link_to_translation:`en:[English]`

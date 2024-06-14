@@ -3,25 +3,27 @@ from esp_docs.conf_docs import *  # noqa: F403,F401
 languages = ['en', 'zh_CN']
 idf_targets = ['esp32', 'esp32c2', 'esp32c3', 'esp32c6', 'esp32s2', 'esp32s3', 'esp32h2']
 
-WIFI_DOCS = ['development_stage/rf_test_items/wifi_signaling_test.rst',
-              'development_stage/rf_test_items/wifi_adaptivity_test.rst',
-              'development_stage/rf_test_items/wifi_blocking_test.rst',
-              'development_stage/rf_test_items/wfa_certification_test.rst',
-              'development_stage/rf_test_items/wifi_non_signaling_test.rst',]
+BLE_DOCS = ['development_stage/rf_test_items/ble_adaptivity_test.rst',
+            'development_stage/rf_test_items/ble_blocking_test.rst',
+            'development_stage/rf_test_items/ble_dtm_test.rst']
 
-BLE_DOCS = ['development_stage/rf_test_items/ble_dtm_test.rst',
-              'development_stage/rf_test_items/ble_adaptivity_test.rst',
-              'development_stage/rf_test_items/ble_blocking_test.rst']
+BT_DOCS = ['development_stage/rf_test_items/bt_ble_non_signaling_test.rst']
+
+WIFI_DOCS = ['development_stage/rf_test_items/wfa_certification_test.rst',
+             'development_stage/rf_test_items/wifi_adaptivity_test.rst',
+             'development_stage/rf_test_items/wifi_blocking_test.rst',
+             'development_stage/rf_test_items/wifi_non_signaling_test.rst',
+             'development_stage/rf_test_items/wifi_signaling_test.rst']
 
 ZIGBEE_DOCS = ['development_stage/rf_test_items/zigbee_non_signaling_test.rst']
 
-ESP32_DOCS = WIFI_DOCS
-ESP32C2_DOCS = WIFI_DOCS + BLE_DOCS
-ESP32C3_DOCS = WIFI_DOCS + BLE_DOCS
-ESP32C6_DOCS = WIFI_DOCS + BLE_DOCS + ZIGBEE_DOCS
+ESP32_DOCS = WIFI_DOCS + BT_DOCS
+ESP32C2_DOCS = WIFI_DOCS + BLE_DOCS + BT_DOCS
+ESP32C3_DOCS = WIFI_DOCS + BLE_DOCS + BT_DOCS
+ESP32C6_DOCS = WIFI_DOCS + BLE_DOCS + BT_DOCS + ZIGBEE_DOCS
 ESP32S2_DOCS = WIFI_DOCS
-ESP32S3_DOCS = WIFI_DOCS + BLE_DOCS
-ESP32H2_DOCS = BLE_DOCS + ZIGBEE_DOCS
+ESP32S3_DOCS = WIFI_DOCS + BLE_DOCS + BT_DOCS
+ESP32H2_DOCS = BLE_DOCS + BT_DOCS + ZIGBEE_DOCS
 
 conditional_include_dict = {'esp32':ESP32_DOCS,
                             'esp32c2':ESP32C2_DOCS,

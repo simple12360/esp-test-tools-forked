@@ -24,4 +24,4 @@ BLE RF 定频测试
 """"""""""""""""""""""""""""""""""""""""""""""""
 参考如下章节：
 
-:doc:`./ble_non_signaling_test`
+:doc:`./bt_ble_non_signaling_test`
