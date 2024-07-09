@@ -3,16 +3,16 @@ Wi-Fi Non-Signaling Test
 
 :link_to_translation:`zh_CN:[中文]`
 
-This chapter introduces how to conduct a Wi-Fi Non-Signaling Test (also known as Fixed Frequency Test) on products based on Espressif chips or modules.
+This chapter introduces how to conduct Wi-Fi Non-Signaling Test (also known as fixed frequency test) on products based on Espressif chips or modules.
 
 .. include:: rf_non_signalling_test_setup.inc
 
-Wi-Fi Transmission Performance Test
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Wi-Fi Transmit Performance Test
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 - **Test Mode**: Set to
 
-  * Tx packet for transmission performance test, packet duty cycle is less than 50%;
+  * Tx packet for transmit performance test, packet duty cycle is less than 50%;
   * Tx continues for certification test, packet duty cycle is close to 100%;
   * Tx tone for single carrier test.
 
@@ -25,28 +25,28 @@ Wi-Fi Transmission Performance Test
   * 2 means 0.5 dB attenuation;
   * 4 means 1 dB attenuation, and so on.
 
-- **Duty Cycle**: Used to set the packet duty cycle during the Tx packet test, default is default (about 30%), can be configured to 10%, 50%, 90%.
-- **Certification EN**: Not enabled by default, only used when verifying the Power Limit function.
-- **Certification Code**: Not enabled by default, only used when verifying the Power Limit function.
+- **Duty Cycle**: Used to set the packet duty cycle in Tx packet test, default is default (about 30%), can be configured to 10%, 50%, 90%.
+- **Certification EN**: Not enabled by default, only used when verifying Power Limit function.
+- **Certification Code**: Not enabled by default, only used when verifying Power Limit function.
 
-After clicking start, the log window should print similar Wi-Fi transmission parameter descriptions as follows:
+After clicking start, the log window should print similar Wi-Fi transmission parameters as follows:
 
 ::
 
     Wifi tx out: channel=1, rate=0x0, BK=0, length=50, delay=1200, packet_num=0
 
-The above parameters indicate that Wi-Fi packet sending is normal, and the transmission performance can be detected with test equipment at this time.
+The above parameters indicate that Wi-Fi packet transmission is normal, and the transmission performance can be detected with test equipment at this time.
 
 .. figure:: ../../../_static/rf_test_tool/esp32s3_wifi_test_on.png
     :align: center
     :scale: 80%
 
-    Wi-Fi Transmission Performance Test
+    Wi-Fi Transmit Performance Test
 
-Wi-Fi Reception Performance Test
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Wi-Fi Receive Performance Test
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-- **Test Mode**: Set to RX packet for reception performance test.
+- **Test Mode**: Set to RX packet for receive performance test.
 - **Wi-Fi Rate**: Set Wi-Fi test rate.
 - **BandWidth**: Set Wi-Fi test bandwidth.
 - **Channel**: Set Wi-Fi test channel.
@@ -65,7 +65,7 @@ Where:
 
 .. note::
 
-    - Desired being 0 indicates that the instrument's packets were not received, please check the instrument's packet sending settings and packet files to ensure the packet receiving link is normal;
+    - Desired being 0 indicates that the instrument's packets were not received, please check the instrument's packet settings and packet file to ensure the packet receiving link is normal;
     - Desired is not 0 and Correct is greater than Desired indicates that there is interference in the environment, please retest in a shielded environment;
     - Other parameters in the packet receiving information are only used for RD debug and have no actual meaning.
 
@@ -73,7 +73,7 @@ Where:
     :align: center
     :scale: 80%
 
-    Wi-Fi Reception Performance Test
+    Wi-Fi Receive Performance Test
 
 Appendix
 ----------------

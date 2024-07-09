@@ -9,7 +9,7 @@
 
     射频非信令测试固件示意图
 
-- **电脑 (PC)** 通过 USB 与 USB-to-UART 转接板连接，通过网线与测试仪器连接。电脑上需安装 ESPRFTestTool 工具、测试仪器控制软件、以及 USB-to-UART 转接板驱动。
+- **电脑 (PC)** 通过 USB 与 USB-to-UART 转接板连接，通过网线与测试仪器连接。电脑上需安装 `EspRFTestTool 工具包 <https://dl.espressif.com/RF/EspRFTestTool_v3.6_Manual.zip>`_、测试仪器控制软件、以及 USB-to-UART 转接板驱动。
 - **测试仪器 (Tester)** 通常为 WT-328/IQXel 综测仪，用于测试待测设备在不同模式下的射频性能。
 - **USB-to-UART 转接板 (USB-to-UART Board)** 用于实现电脑和待测设备之间的通信。
 - **待测设备 (DUT)** 为基于乐鑫芯片或模组设计的产品。待测设备通过 UART 与 USB-to-UART 转接板连接，并通过射频连接线与测试仪器连接。待测设备通常放在屏蔽箱中。
@@ -30,7 +30,7 @@
 
 .. figure:: ../../../_static/rf_test_tool/pcb_antenna_conducted_test.png
     :align: center
-    :scale: 80%
+    :scale: 70%
 
     带有板载 PCB 天线的模组焊接射频连接线示意图
 
