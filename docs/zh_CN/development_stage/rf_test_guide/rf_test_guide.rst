@@ -3,7 +3,7 @@ EspRFTestTool 工具包
 
 :link_to_translation:`en:[English]`
 
-`EspRFTestTool <https://dl.espressif.com/RF/EspRFTestTool_v3.6_Manual.zip>`_ 工具包是乐鑫提供的射频测试工具，包含 EspRFTestTool 工具、DownloadTool 工具和 PowerLimitTool 工具。
+`EspRFTestTool 工具包 <https://dl.espressif.com/RF/EspRFTestTool_v3.6_Manual.zip>`_ 是乐鑫提供的射频测试工具，包含 EspRFTestTool 工具、DownloadTool 工具和 PowerLimitTool 工具。
 
 - `EspRFTestTool 工具 <esp-rf-test-tool>`_：用于相关射频测试；
 - `DownloadTool 工具 <download-tool>`_：用于下载射频测试中所需的固件；

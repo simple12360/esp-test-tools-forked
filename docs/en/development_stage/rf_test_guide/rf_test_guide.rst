@@ -3,7 +3,7 @@ EspRFTestTool Toolkit
 
 :link_to_translation:`zh_CN:[中文]`
 
-The `EspRFTestTool Toolkit <https://dl.espressif.com/RF/EspRFTestTool_v3.6_Manual.zip>`_ toolkit is a radio frequency test tool provided by Espressif, which includes the EspRFTestTool, DownloadTool, and PowerLimitTool.
+The `EspRFTestTool Toolkit <https://dl.espressif.com/RF/EspRFTestTool_v3.6_Manual.zip>`_ is a radio frequency test tool provided by Espressif, which includes the EspRFTestTool, DownloadTool, and PowerLimitTool.
 
 - `EspRFTestTool <esp-rf-test-tool>`_: Used for related radio frequency tests;
 - `DownloadTool <download-tool>`_: Used to download the firmware required for radio frequency testing;
