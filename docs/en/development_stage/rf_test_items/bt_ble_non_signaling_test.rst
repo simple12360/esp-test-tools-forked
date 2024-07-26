@@ -9,12 +9,15 @@ This document introduces how to conduct a {IDF_TARGET_BT_BLE_OPTION} non-signali
 
 .. include:: rf_non_signalling_test_setup.inc
 
+Start Testing
+-------------
+
 .. _ble-non-signalling-test:
 
 .. only:: esp32
 
     Bluetooth/Bluetooth LE TX Performance Test
-    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
     - **Test Mode**:
 
@@ -45,7 +48,7 @@ This document introduces how to conduct a {IDF_TARGET_BT_BLE_OPTION} non-signali
         Bluetooth/Bluetooth LE TX Performance
 
     Bluetooth RX Performance Test
-    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
     - **Test Mode**: Set to BT RX for Bluetooth RX performance tests
     - **Channel**: Set the Bluetooth test channel
@@ -78,7 +81,7 @@ This document introduces how to conduct a {IDF_TARGET_BT_BLE_OPTION} non-signali
         Bluetooth RX Performance Test
 
     Bluetooth LE RX Performance Test
-    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
     - **Test Mode**: Select BLE RX for Bluetooth LE RX performance test
     - **Channel**: Set the Bluetooth LE test channel
@@ -112,7 +115,7 @@ This document introduces how to conduct a {IDF_TARGET_BT_BLE_OPTION} non-signali
 .. only:: not esp32
 
     Bluetooth LE TX Performance Test
-    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
     - **Test Mode**:
 
@@ -143,7 +146,7 @@ This document introduces how to conduct a {IDF_TARGET_BT_BLE_OPTION} non-signali
         Bluetooth LE TX Performance Test
 
     Bluetooth LE RX Performance Test
-    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
     {IDF_TARGET_TWELFTH_PARA:default="received correct package", esp32c3="all packages", esp32s3="all packages"}
 
@@ -210,7 +213,7 @@ This appendix is mainly used to explain the power level and corresponding target
 .. only:: not esp32
 
     Bluetooth LE TX Power Level
-    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
     .. list-table:: {IDF_TARGET_NAME} Bluetooth LE TX Power Level
         :widths: 40 60
