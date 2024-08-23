@@ -37,51 +37,26 @@
 烧录固件
 ------------------
 
-{IDF_TARGET_RF_NON_SIGNALLING_FIRMWARE:default="未更新", esp32="`ESP32 射频非信令测试固件 <https://dl.espressif.com/rf/esp32/ESP32_RFTest_190_8cac24c_20230710.bin>`_", esp32c2="`ESP32-C2 射频非信令测试固件 <https://dl.espressif.com/rf/esp32c2/ESP32-C2_RFTest_Bin_26M_98a091b_20230621.bin>`_", esp32c3="`ESP32-C3 射频非信令测试固件 <https://dl.espressif.com/rf/esp32c3/ESP32-C3_RF_TEST_BIN_V114_1ac85ea_20230504.bin>`_", esp32c6="`ESP32-C6 射频非信令测试固件 <https://dl.espressif.com/rf/esp32c6/ESP32-C6_RFTest_Bin_26f46b0_20230621.bin>`_", esp32s2="`ESP32-S2 射频非信令测试固件 <https://dl.espressif.com/rf/esp32s2/ESP32-S2_RF_TEST_BIN_20220902_05bde8b.bin>`_", esp32s3="`ESP32-S3 射频非信令测试固件 <https://dl.espressif.com/rf/esp32s3/ESP32-S3_RF_TEST_BIN_V110_25c811a_20230504.bin>`_", esp8266="`ESP8266 射频非信令测试固件 (26 MHz) <https://dl.espressif.com/RF/ESP8266_RFTest_153_20231018_26M.bin>`_ 或 `ESP8266 射频非信令测试固件 (40 MHz) <https://dl.espressif.com/RF/ESP8266_RFTest_153_20231020_40M.bin>`_"}
+{IDF_TARGET_RF_NON_SIGNALING_FIRMWARE:default="未更新", esp32="`ESP32 射频非信令测试固件 <https://dl.espressif.com/rf/esp32/ESP32_RFTest_190_8cac24c_20230710.bin>`__", esp32c2="`ESP32-C2 射频非信令测试固件 <https://dl.espressif.com/rf/esp32c2/ESP32-C2_RFTest_Bin_26M_98a091b_20230621.bin>`__", esp32c3="`ESP32-C3 射频非信令测试固件 <https://dl.espressif.com/rf/esp32c3/ESP32-C3_RF_TEST_BIN_V114_1ac85ea_20230504.bin>`__", esp32c6="`ESP32-C6 射频非信令测试固件 <https://dl.espressif.com/rf/esp32c6/ESP32-C6_RFTest_Bin_26f46b0_20230621.bin>`__", esp32s2="`ESP32-S2 射频非信令测试固件 <https://dl.espressif.com/rf/esp32s2/ESP32-S2_RF_TEST_BIN_20220902_05bde8b.bin>`__", esp32s3="`ESP32-S3 射频非信令测试固件 <https://dl.espressif.com/rf/esp32s3/ESP32-S3_RF_TEST_BIN_V110_25c811a_20230504.bin>`__", esp8266="`ESP8266 射频非信令测试固件 (26 MHz) <https://dl.espressif.com/RF/ESP8266_RFTest_153_20231018_26M.bin>`__ 或 `ESP8266 射频非信令测试固件 (40 MHz) <https://dl.espressif.com/RF/ESP8266_RFTest_153_20231020_40M.bin>`__", esp32h2="`ESP32-H2 RF Non-Signaling Test Firmware <https://dl.espressif.com/rf/esp32h2/ESP32-H2_RFTest_Bin_5b55c8f_20231010.bin>`__"}
 
-1. 打开 :ref:`download-tool`。
+1. 打开 :ref:`esp-rf-test-tool`。
 
-2. 设置 ``ChipType``, ``Com Port``, ``Baud Rate``, 点击 ``Open``，选择下载到 ``Flash``。
+2. 设置 ``ChipType``, ``COM``, ``BaudRate``, 点击 ``Open``，打开串口。
 
-.. figure:: ../../../_static/rf_test_tool/phyinit_download_flash.png
+.. note::
+
+    .. only:: esp8266 or esp32c2
+
+        如果主晶振为 26 MHz，``BaudRate`` 设置为 74880；如果主晶振为 40 MHz，``BaudRate`` 设置为 115200。
+
+    .. only:: not esp32c2 and not esp8266
+
+        ``BaudRate`` 设置为 115200
+
+.. figure:: ../../../_static/rf_test_tool/nonsignaling_firmware_flash.png
     :align: center
     :scale: 80%
 
-    DownloadTool 工具配置
+    ESPRFTestTool 工具配置
 
-.. only:: esp32 or esp32s2
-
-    3. 将 {IDF_TARGET_RF_NON_SIGNALLING_FIRMWARE} 通过 UART 烧录至 0x1000，将 phy init bin 固件通过 UART 烧录至 0x1fc000。phy init bin 固件的生成方法请见 `PowerLimitTool 工具 <power-limit-tool>`_。
-
-.. only:: not esp32 and not esp32s2
-
-    3. 将 {IDF_TARGET_RF_NON_SIGNALLING_FIRMWARE} 通过 UART 烧录至 0x0，将 phy init bin 固件通过 UART 烧录至 0x1fc000。phy init bin 固件的生成方法请见 `PowerLimitTool 工具 <power-limit-tool>`_。
-
-.. figure:: ../../../_static/rf_test_tool/phyinit_download_start.png
-    :align: center
-    :scale: 80%
-
-    烧录固件
-
-开始测试
-----------------
-
-串口配置
-^^^^^^^^^^^^^^^
-
-- **ChipType**：选择对应的芯片类型
-- **COM**：选择对应的 COM 口
-
-.. only:: esp8266
-
-  - **BaudRate**：如果主晶振为 26 MHz，波特率设置为 74880；如果主晶振为 40 MHz，波特率设置为 115200。
-
-.. only:: esp32c2
-
-  - **BaudRate**：选择 74880
-
-.. only:: not esp32c2 and not esp8266
-
-  - **BaudRate**：选择 115200
-
-- **Open**：打开串口
+3. 将 {IDF_TARGET_RF_NON_SIGNALING_FIRMWARE} 通过 ``UART`` 烧录至 ``Flash``。

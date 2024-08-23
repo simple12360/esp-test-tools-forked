@@ -7,8 +7,11 @@ This document introduces how to conduct 802.15.4 non-signaling tests (also known
 
 .. include:: rf_non_signalling_test_setup.inc
 
+Start Testing
+-------------
+
 Zigbee TX Performance Test
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 - **Test Mode**:
 
@@ -34,7 +37,7 @@ This indicates that Zigbee is sending packets normally, and the TX performance c
       Zigbee TX Performance Test
 
 Zigbee RX Performance Test
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 - **Test Mode**: Set to ZB RX for Zigbee RX performance test.
 - **Channel**: Set the Zigbee test channel.
@@ -63,7 +66,7 @@ Based on the above parameters, you can calculate:
       Zigbee RX Performance Test
 
 Appendix
-----------------
+--------
 
 This appendix is mainly used to explain the output target power of {IDF_TARGET_NAME} 802.15.4, which is used for RF debugging or test reference.
 

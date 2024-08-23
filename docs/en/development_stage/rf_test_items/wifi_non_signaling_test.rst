@@ -7,8 +7,11 @@ This document introduces how to conduct Wi-Fi Non-Signaling Test (also known as 
 
 .. include:: rf_non_signalling_test_setup.inc
 
+Start Testing
+-------------
+
 Wi-Fi TX Performance Test
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^
 
 - **Test Mode**:
 
@@ -44,7 +47,7 @@ The above parameters indicate that Wi-Fi packet transmission is normal, and the 
     Wi-Fi TX Performance Test
 
 Wi-Fi RX Performance Test
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^
 
 - **Test Mode**: Set to ``RX packet`` for RX performance tests.
 - **Wi-Fi Rate**: Set Wi-Fi test rate.
@@ -76,7 +79,7 @@ Where:
     Wi-Fi RX Performance Test
 
 Appendix
-----------------
+--------
 
 This appendix is mainly used to explain the target output power of the chip's Wi-Fi, which is used for RF debugging or test reference.
 

@@ -7,6 +7,9 @@
 
 .. include:: rf_non_signalling_test_setup.inc
 
+开始测试
+----------------
+
 Zigbee 发射性能测试
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
