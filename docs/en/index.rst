@@ -3,7 +3,7 @@ ESP Test Tools and Guidelines
 
 :link_to_translation:`zh_CN:[中文]`
 
-This repository mainly provides RF test tools and test items for the development stage, as well as tools and guidelines for the production stage.
+This repository provides comprehensive resources to support the development and production of products based on `Espressif chips <https://www.espressif.com/en/products/socs>`__ and `modules <https://www.espressif.com/en/products/modules>`__. For the development stage, it provides an RF testing tool and detailed test guidelines to ensure your product meets the necessary performance and certification standards. Additionally, for the production stage, the repository includes essential tools and instructions to streamline the manufacturing process, ensuring efficient testing, validation, and quality control of your products.
 
 =========================    =========================    =========================
    |RF Test Guide|_              |RF Test Items|_         |Production-stage Tools|_
