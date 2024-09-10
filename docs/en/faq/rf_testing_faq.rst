@@ -1,5 +1,5 @@
-RF Testing FAQs
-===============
+RF Testing
+==========
 
 :link_to_translation:`zh_CN:[中文]`
 

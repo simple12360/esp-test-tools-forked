@@ -5,35 +5,55 @@ Development Stage
 
 {IDF_TARGET_BT_BLE_OPTION: default="Bluetooth LE", esp32="Bluetooth and Bluetooth LE"}
 
-For the development stage, this repository provides test tools, procedures, and necessary firmware for the following RF test items:
+To ensure your product meets requirements for related `RF Certifications`_, this repository provides the testing tools and guidelines to facilitate RF testing, ensuring compliance with global standards and industry certifications.
+
+RF Test Tool
+============
+
+:doc:`EspRFTestTool Toolkit </development_stage/rf_test_guide/rf_test_guide>` is a comprehensive tool that allows you to control devices and evaluate key RF performance metrics. It supports the following `RF Test Items`_.
+
+RF Test Items
+=============
 
 .. only:: not esp32h2
 
-   - :doc:`Wi-Fi Non-Signaling Test </development_stage/rf_test_items/wifi_non_signaling_test>`: This test directly controls the device to transmit specific signals without establishing a data connection. It evaluates key RF performance metrics, such as transmit power, spectrum quality, and error rate, ensuring wireless communication quality in various scenarios.
+   Wi-Fi Test
+   ----------
 
-   - :doc:`Wi-Fi Signaling Test </development_stage/rf_test_items/wifi_signaling_test>`: This test assesses and verifies the Wi-Fi signaling functions of wireless network devices, focusing on stable and reliable communication across different operating scenarios. It evaluates the Over-The-Air (OTA) performance, including Total Radiated Power (TRP) and Total Isotropic Sensitivity (TIS).
+   - :doc:`Wi-Fi Non-Signaling Test </development_stage/rf_test_items/wifi_non_signaling_test>` directly controls the device to transmit specific signals without establishing a data connection. It evaluates key RF performance metrics, such as transmit power, spectrum quality, and error rate, ensuring wireless communication quality in various scenarios.
 
-   - :doc:`Wi-Fi Adaptivity Test </development_stage/rf_test_items/wifi_adaptivity_test>`: This test simulates various network conditions and loads to access device's real-time adjustments in transmission rate, channel selection, and power levels, optimizing overall network performance and stability.
+   - :doc:`Wi-Fi Signaling Test </development_stage/rf_test_items/wifi_signaling_test>` assesses and verifies the Wi-Fi signaling functions of wireless network devices, focusing on stable and reliable communication across different operating scenarios. It evaluates the Over-The-Air (OTA) performance, including Total Radiated Power (TRP) and Total Isotropic Sensitivity (TIS).
 
-   - :doc:`Wi-Fi Blocking Test </development_stage/rf_test_items/wifi_blocking_test>`: This test evaluates the device's reception performance in environments with strong interference. By introducing high-intensity interference signals, it measures reception sensitivity and anti-interference capability, ensuring reliable operation in complex wireless environments.
+   - :doc:`Wi-Fi Adaptivity Test </development_stage/rf_test_items/wifi_adaptivity_test>` simulates various network conditions and loads to access device's real-time adjustments in transmission rate, channel selection, and power levels, optimizing overall network performance and stability.
+
+   - :doc:`Wi-Fi Blocking Test </development_stage/rf_test_items/wifi_blocking_test>` evaluates the device's reception performance in environments with strong interference. By introducing high-intensity interference signals, it measures reception sensitivity and anti-interference capability, ensuring reliable operation in complex wireless environments.
 
 .. only:: not esp8266 and not esp32s2
 
-   - :doc:`{IDF_TARGET_BT_BLE_OPTION} Non-Signaling Test </development_stage/rf_test_items/bt_ble_non_signaling_test>`: This test controls the device to transmit specific signals without establishing a connection, evaluating performance metrics such as transmit power, spectrum characteristics, and error rate to ensure communication quality.
+   Bluetooth Test
+   --------------
+
+   - :doc:`{IDF_TARGET_BT_BLE_OPTION} Non-Signaling Test </development_stage/rf_test_items/bt_ble_non_signaling_test>` controls the device to transmit specific signals without establishing a connection, evaluating performance metrics such as transmit power, spectrum characteristics, and error rate to ensure communication quality.
 
 .. only:: not esp8266 and not esp32 and not esp32s2
 
-   - :doc:`Bluetooth LE DTM Test </development_stage/rf_test_items/ble_dtm_test>`: This test evaluates the RF performance of Bluetooth LE devices by directly controlling the device to enter specific transmission or reception modes, accessing key metrics like transmit power, reception sensitivity, and spectrum characteristics.
+   - :doc:`Bluetooth LE DTM Test </development_stage/rf_test_items/ble_dtm_test>` evaluates the RF performance of Bluetooth LE devices by directly controlling the device to enter specific transmission or reception modes, accessing key metrics like transmit power, reception sensitivity, and spectrum characteristics.
 
-   - :doc:`Bluetooth LE Adaptivity Test </development_stage/rf_test_items/ble_adaptivity_test>`: This test ensures the device meets performance criteria during frequency hopping, particularly when the Power Spectral Density (PSD) of the Bluetooth LE signal exceeds 10 dBm/MHz, avoiding interference with other wireless devices.
+   - :doc:`Bluetooth LE Adaptivity Test </development_stage/rf_test_items/ble_adaptivity_test>` ensures the device meets performance criteria during frequency hopping, particularly when the Power Spectral Density (PSD) of the Bluetooth LE signal exceeds 10 dBm/MHz, avoiding interference with other wireless devices.
 
-   - :doc:`Bluetooth LE Blocking Test </development_stage/rf_test_items/ble_blocking_test>`: This test assesses device stability and performance in environments with interference from other wireless signals, ensuring compliance with relevant standards.
+   - :doc:`Bluetooth LE Blocking Test </development_stage/rf_test_items/ble_blocking_test>` assesses device stability and performance in environments with interference from other wireless signals, ensuring compliance with relevant standards.
 
 .. only:: esp32c6 or esp32h2
 
-    - :doc:`802.15.4 Non-Signaling Test </development_stage/rf_test_items/zigbee_non_signaling_test>`: This test directly controls the device to transmit specific signals without requiring a network connection. It evaluates key performance metrics such as transmit power, spectrum characteristics, and error rate, ensuring reliable communication quality in IoT applications.
+   802.15.4 Test
+   -------------
 
-So that your product can pass the following certifications:
+   - :doc:`802.15.4 Non-Signaling Test </development_stage/rf_test_items/zigbee_non_signaling_test>` directly controls the device to transmit specific signals without requiring a network connection. It evaluates key performance metrics such as transmit power, spectrum characteristics, and error rate, ensuring reliable communication quality in IoT applications.
+
+RF Certifications
+=================
+
+The `RF Test Items`_ outlined above are designed to ensure your product complies with the standards required for the following certifications:
 
 - :doc:`CE Certification <rf_test_certification/ce_certification>`: A mandatory certification by the EU, confirming compliance with safety, health, and environmental protection standards.
 
@@ -41,9 +61,11 @@ So that your product can pass the following certifications:
 
 - :doc:`SRRC Certification <rf_test_certification/srrc_certification>`: A mandatory certification for radio equipment in China, ensuring compliance with national radio management regulations to avoid electromagnetic interference.
 
+Test items for each certification are listed in the following table.
+
 .. only:: esp32
 
-   .. list-table::
+   .. list-table:: Test Items for RF Certifications
       :header-rows: 1
 
       * -
@@ -69,7 +91,7 @@ So that your product can pass the following certifications:
 
 .. only:: esp8266 or esp32s2
 
-   .. list-table::
+   .. list-table:: Test Items for RF Certifications
       :header-rows: 1
 
       * -
@@ -91,7 +113,7 @@ So that your product can pass the following certifications:
 
 .. only:: not esp8266 and not esp32 and not esp32s2 and not esp32c6 and not esp32h2
 
-   .. list-table::
+   .. list-table:: Test Items for RF Certifications
       :header-rows: 1
 
       * -
@@ -129,7 +151,7 @@ So that your product can pass the following certifications:
 
 .. only:: esp32c6
 
-   .. list-table::
+   .. list-table:: Test Items for RF Certifications
       :header-rows: 1
 
       * -
@@ -171,7 +193,7 @@ So that your product can pass the following certifications:
 
 .. only:: esp32h2
 
-   .. list-table::
+   .. list-table:: Test Items for RF Certifications
       :header-rows: 1
 
       * -
@@ -201,4 +223,11 @@ So that your product can pass the following certifications:
 
 .. only:: not esp32h2
 
-    In addition to this, this repository also provides :doc:`WFA Certification and Testing Guide </development_stage/rf_test_items/wfa_certification_test>`.
+   .. note::
+
+      :doc:`Wi-Fi Signaling Test </development_stage/rf_test_items/wifi_signaling_test>` is not used for standard RF certifications and is typically used to evaluate the OTA performance of devices.
+
+   WFA Certification and Testing Guideline
+   =======================================
+
+   In addition, this repository also provides :doc:`WFA Certification and Testing Guide </development_stage/rf_test_items/wfa_certification_test>`, which provides detailed information about the WFA certification process and testing requirements to help you pass the Wi-Fi Alliance certification.
