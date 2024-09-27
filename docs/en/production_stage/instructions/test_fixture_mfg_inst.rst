@@ -15,7 +15,7 @@ Overview
 
 Module fixtures have different structures based on their types and usage. The structure of an ESP-WROVER fixture is shown in the following figure:
 
-.. figure:: ../../../_static/test_fixture_manufacturing_inst/test_fixture_structure.png
+.. figure:: ../../../_static/test_fixture_manufacturing_inst/test_fixture_structure_en.png
     :align: center
     :scale: 40%
 
@@ -202,7 +202,7 @@ Please see the rules in the table below, and connect the red and green wires as 
       - A four-channel side switch that controls four circuits.
       - --
 
-.. figure:: ../../../_static/test_fixture_manufacturing_inst/connect_red_wires.png
+.. figure:: ../../../_static/test_fixture_manufacturing_inst/connect_red_wires_en.png
     :align: center
     :scale: 100%
 
@@ -223,7 +223,7 @@ When the Automatic Mode Switching on the Tool Side is not supported
 
 1. ESP-WROOM-02
 
-.. figure:: ../../../_static/test_fixture_manufacturing_inst/esp_wroom_02_wiring.png
+.. figure:: ../../../_static/test_fixture_manufacturing_inst/esp_wroom_02_wiring_en.png
     :align: center
     :scale: 80%
 
@@ -231,7 +231,7 @@ When the Automatic Mode Switching on the Tool Side is not supported
 
 2. ESP-WROOM-32
 
-.. figure:: ../../../_static/test_fixture_manufacturing_inst/esp_wroom_32_wiring.png
+.. figure:: ../../../_static/test_fixture_manufacturing_inst/esp_wroom_32_wiring_en.png
     :align: center
     :scale: 80%
 
@@ -239,7 +239,7 @@ When the Automatic Mode Switching on the Tool Side is not supported
 
 3. ESP-WROVER
 
-.. figure:: ../../../_static/test_fixture_manufacturing_inst/esp_wrover_wiring.png
+.. figure:: ../../../_static/test_fixture_manufacturing_inst/esp_wrover_wiring_en.png
     :align: center
     :scale: 80%
 
@@ -251,7 +251,7 @@ When the Automatic Mode Switching on the Tool Side is supported
 
 1. ESP-WROOM-02
 
-.. figure:: ../../../_static/test_fixture_manufacturing_inst/esp_wroom_02_wiring_auto.png
+.. figure:: ../../../_static/test_fixture_manufacturing_inst/esp_wroom_02_wiring_auto_en.png
     :align: center
     :scale: 80%
 
@@ -259,7 +259,7 @@ When the Automatic Mode Switching on the Tool Side is supported
 
 2. ESP32-WROOM-32
 
-.. figure:: ../../../_static/test_fixture_manufacturing_inst/esp_wroom_32_wiring_auto.png
+.. figure:: ../../../_static/test_fixture_manufacturing_inst/esp_wroom_32_wiring_auto_en.png
     :align: center
     :scale: 80%
 
@@ -267,7 +267,7 @@ When the Automatic Mode Switching on the Tool Side is supported
 
 3. ESP-WROVER
 
-.. figure:: ../../../_static/test_fixture_manufacturing_inst/esp_wrover_wiring_auto.png
+.. figure:: ../../../_static/test_fixture_manufacturing_inst/esp_wrover_wiring_auto_en.png
     :align: center
     :scale: 80%
 
@@ -296,7 +296,7 @@ Operation Mode (currently only for ESP-WROOM-02 series modules)
 4. Press the handle.
 5. Enter the command **AT+GMR**, and click Send.
 
-.. figure:: ../../../_static/test_fixture_manufacturing_inst/AT_comment_test.png
+.. figure:: ../../../_static/test_fixture_manufacturing_inst/at_comment_test.png
     :align: center
 
     AT Command Test
@@ -307,7 +307,7 @@ Operation Mode (currently only for ESP-WROOM-02 series modules)
 
 6. Check the serial debugging tool window.
 
-.. figure:: ../../../_static/test_fixture_manufacturing_inst/AT_test_expected_result.png
+.. figure:: ../../../_static/test_fixture_manufacturing_inst/at_test_expected_result_en.png
     :align: center
 
     Expected Result of AT Test - ESP8266 Series
@@ -324,12 +324,12 @@ Download Mode
 4.  Press the handle.
 5. Check the serial debugging tool window.
 
-.. figure:: ../../../_static/test_fixture_manufacturing_inst/expected_result_esp8266.png
+.. figure:: ../../../_static/test_fixture_manufacturing_inst/expected_result_esp8266_en.png
     :align: center
 
     Expected Result - ESP8266 Series
 
-.. figure:: ../../../_static/test_fixture_manufacturing_inst/expected_result_esp32.png
+.. figure:: ../../../_static/test_fixture_manufacturing_inst/expected_result_esp32_en.png
     :align: center
 
     Expected Result - ESP32 Series

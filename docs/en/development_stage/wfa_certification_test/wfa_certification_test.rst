@@ -75,7 +75,7 @@ Certification Method
 
 The relationship between the two is as follows:
 
-.. figure:: ../../../_static/wfa_certification_test_guide/new_certification_and_quicktrack.png
+.. figure:: ../../../_static/wfa_certification_test_guide/new_certification_and_quicktrack_en.png
    :align: center
    :scale: 100%
 
@@ -120,7 +120,7 @@ Advantages of QuickTrack
 
 QuickTrack reduces costs and testing time, helping you achieve WFA certification faster. For example, the ESP32-C2 module's full certification test takes about 7.5 days.
 
-.. figure:: ../../../_static/wfa_certification_test_guide/fulltest_time.png
+.. figure:: ../../../_static/wfa_certification_test_guide/fulltest_time_en.png
     :align: center
     :scale: 100%
 
@@ -139,7 +139,7 @@ If you choose QuickTrack, you must first confirm the product information below:
 
 The comparison between QuickTrack and the ordinary certification method is as follows:
 
-.. figure:: ../../../_static/wfa_certification_test_guide/normal_scheme_quicktrack_comparison.png
+.. figure:: ../../../_static/wfa_certification_test_guide/normal_scheme_quicktrack_comparison_en.png
     :align: center
     :scale: 100%
 

@@ -25,7 +25,7 @@ RF 综测仪测试方案
 
 测试过程简介（测试系统框架如下图）：
 
-.. figure:: ../../../_static/production_testing_guide/diagram_of_tester_scheme_CN.png
+.. figure:: ../../../_static/production_testing_guide/tester_scheme_cn.png
     :align: center
     :scale: 70%
 
@@ -50,7 +50,7 @@ RF 综测仪测试方案
 
 信号板测试方案系统框架如下所示，信号板在产测过程中，可作为标准设备，与待测设备进行数据通讯，通过对通讯过程的数据进行判断，达到对待测设备进行测试的作用。
 
-.. figure:: ../../../_static/production_testing_guide/diagram_of_signal_board_scheme_CN.png
+.. figure:: ../../../_static/production_testing_guide/signal_board_scheme_cn.png
     :align: center
     :scale: 80%
 
@@ -177,7 +177,7 @@ RF 综测仪测试方案
 
 Wi-Fi 模组产品的产测需要间接将模组管脚引出，并连接到产测底板后与 PC 串口进行通信，我们可以通过治具的结构压合最终达到这一目的。治具的整体外观示例可见下图。
 
-.. figure:: ../../../_static/production_testing_guide/a_typical_module_fixture.png
+.. figure:: ../../../_static/production_testing_guide/module_fixture.png
     :align: center
     :scale: 70%
 
@@ -218,7 +218,7 @@ Wi-Fi 模组产品的产测需要间接将模组管脚引出，并连接到产�
         * - ESP-BAT32
           - ESP32/ESP32-S/ESP32-C
 
-    .. figure:: ../../../_static/production_testing_guide/a_typical_espbat32_signal_board_CN.png
+    .. figure:: ../../../_static/production_testing_guide/espbat32_signal_board_cn.png
         :align: center
         :scale: 70%
 
@@ -236,7 +236,7 @@ Wi-Fi 模组产品的产测需要间接将模组管脚引出，并连接到产�
         * - ESP-BAT8
           - ESP8266
 
-    .. figure:: ../../../_static/production_testing_guide/a_typical_espbat8_signal_board_CN.png
+    .. figure:: ../../../_static/production_testing_guide/espbat8_signal_board_cn.png
         :align: center
         :scale: 70%
 
@@ -381,7 +381,7 @@ Wi-Fi 模组产品的产测需要间接将模组管脚引出，并连接到产�
 
 .. only:: esp32c2 or esp32c3 or esp32c6
 
-    .. figure:: ../../../_static/production_testing_guide/wiring_for_ESP32C3_WROOM_02.png
+    .. figure:: ../../../_static/production_testing_guide/esp32c3_wroom_02_wiring.png
         :align: center
         :scale: 70%
 
@@ -389,7 +389,7 @@ Wi-Fi 模组产品的产测需要间接将模组管脚引出，并连接到产�
 
 .. only:: esp32 or esp32s2 or esp32s3
 
-    .. figure:: ../../../_static/production_testing_guide/wiring_for_ESP32_WROOM_32D.png
+    .. figure:: ../../../_static/production_testing_guide/esp32_wroom_32d_wiring.png
         :align: center
         :scale: 70%
 
@@ -397,7 +397,7 @@ Wi-Fi 模组产品的产测需要间接将模组管脚引出，并连接到产�
 
 .. only:: esp8266
 
-    .. figure:: ../../../_static/production_testing_guide/wiring_for_ESP32_WROOM_02D.png
+    .. figure:: ../../../_static/production_testing_guide/esp32_wroom_02d_wiring.png
         :align: center
         :scale: 70%
 
@@ -565,7 +565,7 @@ GPIO 导通测试
 - **测试过程：** 在射频性能测试结束后，发送一系列串口命令来进行导通测试。此命令已经在上位机内集成，客户只需要开启此功能即可，若无 GPIO 导通测试需求，则不需要开启。
 - **配置界面：** 可在 *Test Flow* 下的 *GENERAL_TEST* 模块中使能（见下图），详细说明请参考 :ref:`appendix-b`。
 
-.. figure:: ../../../_static/production_testing_guide/GPIO_conductivity_test.png
+.. figure:: ../../../_static/production_testing_guide/gpio_cond_test.png
     :align: center
     :scale: 70%
 

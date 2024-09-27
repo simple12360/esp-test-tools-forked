@@ -296,7 +296,7 @@
 4. 按下手柄。
 5. 在图红色区域内输入命令 **AT+GMR**，点击发送。
 
-.. figure:: ../../../_static/test_fixture_manufacturing_inst/AT_comment_test.png
+.. figure:: ../../../_static/test_fixture_manufacturing_inst/at_comment_test.png
     :align: center
 
     AT 命令测试示意
@@ -307,7 +307,7 @@
 
 6. 观察串口调试工具窗口。
 
-.. figure:: ../../../_static/test_fixture_manufacturing_inst/AT_test_expected_result_cn.png
+.. figure:: ../../../_static/test_fixture_manufacturing_inst/at_test_expected_result_cn.png
     :align: center
 
     AT 测试期望结果

@@ -25,7 +25,7 @@ The tester scheme is widely used for the production testing of Wi-Fi products. E
 
 The testing steps can be found below, which are also demonstrated in the figure below:
 
-.. figure:: ../../../_static/production_testing_guide/diagram_of_tester_scheme_EN.png
+.. figure:: ../../../_static/production_testing_guide/tester_scheme_en.png
     :align: center
     :scale: 70%
 
@@ -50,7 +50,7 @@ The signal board scheme is specially designed by Espressif, which can effectivel
 
 As demonstrated in the figure below, the signal board can be used as a standard device to interact with and test the DUT (Device Under Test) by analyzing the communication data.
 
-.. figure:: ../../../_static/production_testing_guide/diagram_of_signal_board_scheme_EN.png
+.. figure:: ../../../_static/production_testing_guide/signal_board_scheme_en.png
     :align: center
     :scale: 80%
 
@@ -177,7 +177,7 @@ The test fixture is an important equipment to execute the DUT in test mode. Spec
 
 For the production testing of Wi-Fi modules, the module pins must be led out and connected to the base board, so as to communicate with the serial ports of the PC. To achieve this, a fixture can be used. The figures below show the overall appearance of a typical fixture.
 
-.. figure:: ../../../_static/production_testing_guide/a_typical_module_fixture.png
+.. figure:: ../../../_static/production_testing_guide/module_fixture.png
     :align: center
     :scale: 70%
 
@@ -218,7 +218,7 @@ The signal board can be used a standard device to interact with the DUT during t
         * - ESP-BAT32
           - For ESP32/ESP32-S/ESP32-C series
 
-    .. figure:: ../../../_static/production_testing_guide/a_typical_espbat32_signal_board_EN.png
+    .. figure:: ../../../_static/production_testing_guide/espbat32_signal_board_en.png
         :align: center
         :scale: 80%
 
@@ -236,7 +236,7 @@ The signal board can be used a standard device to interact with the DUT during t
         * - ESP-BAT8
           - For ESP8266 series
 
-    .. figure:: ../../../_static/production_testing_guide/a_typical_espbat8_signal_board_EN.png
+    .. figure:: ../../../_static/production_testing_guide/espbat8_signal_board_en.png
         :align: center
         :scale: 70%
 
@@ -381,7 +381,7 @@ Please connect your DUT to the production testing base board as shown in the fol
 
 .. only:: esp32c2 or esp32c3 or esp32c6
 
-    .. figure:: ../../../_static/production_testing_guide/wiring_for_ESP32C3_WROOM_02.png
+    .. figure:: ../../../_static/production_testing_guide/esp32c3_wroom_02_wiring.png
         :align: center
         :scale: 70%
 
@@ -389,7 +389,7 @@ Please connect your DUT to the production testing base board as shown in the fol
 
 .. only:: esp32 or esp32s2 or esp32s3
 
-    .. figure:: ../../../_static/production_testing_guide/wiring_for_ESP32_WROOM_32D.png
+    .. figure:: ../../../_static/production_testing_guide/esp32_wroom_32d_wiring.png
         :align: center
         :scale: 70%
 
@@ -397,7 +397,7 @@ Please connect your DUT to the production testing base board as shown in the fol
 
 .. only:: esp8266
 
-    .. figure:: ../../../_static/production_testing_guide/wiring_for_ESP32_WROOM_02D.png
+    .. figure:: ../../../_static/production_testing_guide/esp32_wroom_02d_wiring.png
         :align: center
         :scale: 70%
 
@@ -565,7 +565,7 @@ GPIO Conductivity Test
 - **Test Steps:** After the RF test is completed, a series of serial port commands are sent to perform the GPIO conductivity test. The serial port commands have been integrated in the host computer, so the customers can easily perform the GPIO Conductivity Test by enabling this function.
 - **Configuration Interface:** As shown in the figure below, you can enable this test in the *GENERAL_TEST* sub-list on the *Test Flow* tab. For details, please refer to :ref:`appendix-b`.
 
-.. figure:: ../../../_static/production_testing_guide/GPIO_conductivity_test.png
+.. figure:: ../../../_static/production_testing_guide/gpio_cond_test.png
     :align: center
     :scale: 70%
 
