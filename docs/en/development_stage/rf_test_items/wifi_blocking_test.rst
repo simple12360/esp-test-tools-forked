@@ -3,18 +3,18 @@ Wi-Fi Blocking Test
 
 :link_to_translation:`zh_CN:[中文]`
 
-The Wi-Fi Blocking Test evaluates the device's reception performance in environments with strong interference. By introducing high-intensity interference signals, it measures reception sensitivity and anti-interference capability, ensuring reliable operation in complex wireless environments.
+The Wi-Fi Blocking Test evaluates the device's reception performance in environments with strong interference. By introducing high-intensity interference signals, it measures the reception sensitivity and anti-interference capability of a device, ensuring reliable operation in complex wireless environments.
 
 .. include:: wifi_blocking_adaptivity_test_setup.inc
 
-Testing with Serial Port Commands
+Test with Serial Port Commands
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Enter the following commands in the serial port in sequence to set up the network:
 
 ::
 
-  //Device networking
+  //Device Provisioning
   //Configure the prototype to enter station mode
   op -S -o 1
 
@@ -25,27 +25,27 @@ Enter the following commands in the serial port in sequence to set up the networ
 
     - The ``-p`` parameter is used to set the AP password. If the AP has no password, this parameter is not needed.
 
-The following information is printed in the serial port, indicating a successful connection and the Wi-Fi Blocking Test can be performed.
+If the following information is printed on the serial port, the connection is successful and the Wi-Fi Blocking Test can be performed.
 
 .. figure:: ../../../_static/rf_test_tool/wifi_blocking_log.png
     :align: center
     :scale: 80%
 
-    Device Networking Serial Port Print Log
+    Serial Port Log for Device Provisioning
 
-Testing with ESPRFTestTool
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Test with ESPRFTestTool
+^^^^^^^^^^^^^^^^^^^^^^^
 
-- Open the `EspRFTestTool package <https://dl.espressif.com/RF/EspRFTestTool_v3.6_Manual.zip>`_, configure ``ChipType`` and ``COM``, select a baud rate of 115200, after opening the port, select the ``WiFi Adaptivity`` test interface.
+- Open the `EspRFTestTool package <https://dl.espressif.com/RF/EspRFTestTool_v3.6_Manual.zip>`_, configure ``ChipType`` and ``COM``, select 115200 for ``BaudRate``, open the port, and select the ``WiFi Adaptivity`` test interface.
 
-- In ``STA`` mode, enter ``AP ssid`` and ``AP pwd``, then click ``Connect AP`` to connect.
+- In ``STA`` mode, enter ``AP ssid`` and ``AP pwd``, and click ``Connect AP`` to connect.
 
-- If a log similar to the following is printed, it indicates that the network is successfully set up:
+- After successful connection, the following log should be printed:
 
 .. figure:: ../../../_static/rf_test_tool/wifi_adptive_connection.png
     :align: center
     :scale: 80%
 
-    Device Networking
+    Serial Port Log for Device Provisioning
 
-After the network is successfully set up, you can start the Wi-Fi Blocking Test.
+After successful connection, you can start the Wi-Fi Blocking Test.
