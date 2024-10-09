@@ -3,7 +3,7 @@ Wi-Fi Adaptivity Test
 
 :link_to_translation:`zh_CN:[中文]`
 
-The Wi-Fi Adaptivity Test simulates various network conditions and loads to access device's real-time adjustments in transmission rate, channel selection, and power levels, optimizing overall network performance and stability.
+The Wi-Fi Adaptivity Test evaluates a device's ability to make real-time adjustments to parameters, such as transmission rate, channel selection, and power levels, by simulating varying network conditions and loads. This test aims to optimize the overall network performance and stability.
 
 .. note::
 
@@ -22,7 +22,7 @@ Enter the following commands in the serial port in sequence for network configur
 
 ::
 
-  //Device networking
+  //Device provisioning
   //Configure the prototype to enter station mode
   op -S -o 1
 
@@ -43,13 +43,13 @@ Enter the following commands in the serial port in sequence for network configur
 
     The ``-p`` parameter is used to set the AP password. If the AP has no password, this parameter is not needed.
 
-If the following similar information is printed in the serial port, it means that the traffic test has been successfully completed and the Wi-Fi adaptivity test can be started.
+If information similar to the following is printed on the serial port, it means that the traffic test has been successfully completed and the Wi-Fi adaptivity test can be started.
 
 .. figure:: ../../../_static/rf_test_tool/wifi_adptive_log.png
     :align: center
     :scale: 80%
 
-    Device Networking Serial Port Print Log
+    Serial Port Log for Device Provisioning
 
 Test Using EspRFTestTool Tool
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -64,9 +64,9 @@ Test Using EspRFTestTool Tool
     :align: center
     :scale: 80%
 
-    Device Networking
+    Device Network Provisioning
 
-- After successful connection, set ``Pakcet Num`` to a sufficiently large value, such as 20000000, to meet the long traffic test time.
+- After successful connection, set ``Pakcet Num`` to a sufficiently large value, such as 20000000, to ensure a sufficient traffic test duration.
 
 - Set ``Server PORT`` to 8080, ``Socket ID`` to 54, and change ``Packet Delay`` to 1 to meet certification requirements.
 
