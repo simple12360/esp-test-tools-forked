@@ -5,9 +5,9 @@ EspRFTestTool 工具包
 
 `EspRFTestTool 工具包 <https://dl.espressif.com/RF/EspRFTestTool_v3.6_Manual.zip>`_ 是乐鑫提供的射频测试工具，包含 EspRFTestTool 工具、DownloadTool 工具和 PowerLimitTool 工具。
 
-- `EspRFTestTool 工具 <esp-rf-test-tool>`_：用于相关射频测试；
-- `DownloadTool 工具 <download-tool>`_：用于下载射频测试中所需的固件；
-- `PowerLimitTool 工具 <power-limit-tool>`_：用于生成定制化 phy_init_data 固件。
+- `EspRFTestTool 工具`_：用于相关射频测试；
+- `DownloadTool 工具`_：用于下载射频测试中所需的固件；
+- `PowerLimitTool 工具`_：用于生成定制化 phy_init_data 固件。
 
 .. note::
 
@@ -52,7 +52,7 @@ EspRFTestTool 工具包主界面就是 EspRFTestTool 工具，包含串口配置
 
     EspRFTestTool 下载配置区
 
-一般使用 `DownloadTool 工具 <download-tool>`_ 下载射频测试中所需的固件，但是对于一些简单的固件，如非信令测试固件与自适应测试固件，可直接使用 EspRFTestTool 工具进行快速烧录。
+一般使用 `DownloadTool 工具`_ 下载射频测试中所需的固件，但是对于一些简单的固件，如非信令测试固件与自适应测试固件，可直接使用 EspRFTestTool 工具进行快速烧录。
 
 - 拉低 Boot 管脚后对芯片重新上电使芯片进入下载模式；
 - 默认通过 ``UART`` 进行烧录；
@@ -219,16 +219,16 @@ PowerLimitTool 可用于配置 Wi-Fi 输出功率，生成单国和多国的 phy
 
 {IDF_TARGET_RF_NON_SIGNALING_FIRMWARE_ADDRESS:default="0x0", esp32="0x1000", esp32s2="0x1000"}
 
-5. 使用 `DownloadTool 工具 <download-tool>`_ 将生成的 phy_init_bin 文件下载到待测产品。
+5. 使用 `DownloadTool 工具`_ 将生成的 phy_init_bin 文件下载到待测产品。
 
 - 从 ``Tool`` 选项栏中选择 ``DownloadTool``，进入 ``DownloadTool`` 界面
-- 参考 `DownloadTool 工具 <download-tool>`_ 操作步骤，将 phy_init_bin 文件与相应的 RF 测试固件烧录至 ``flash``。
+- 参考 `DownloadTool 工具`_ 操作步骤，将 phy_init_bin 文件与相应的 RF 测试固件烧录至 ``flash``。
 - phy_init_bin 的烧录地址为 ``0x1fc000``。
 - 根据测试项目不同，应选择对应的 RF 测试固件进行烧录，这里以 {IDF_TARGET_RF_NON_SIGNALING_FIRMWARE_COPY} 为例进行说明。 {IDF_TARGET_RF_NON_SIGNALING_FIRMWARE_COPY} 的烧录地址为 {IDF_TARGET_RF_NON_SIGNALING_FIRMWARE_ADDRESS}。
 
 .. note::
 
-    关于信令测试固件的烧录地址，请参考 `Wi-Fi 信令测试 <wifi_signaling_test>`_ 与 `低功耗蓝牙 DTM 测试 <ble_dtm_test>`_。
+    关于信令测试固件的烧录地址，请参考 :doc:`RF 测试项目 <../rf_test_items/index>` 中相关文档。
 
 .. figure:: ../../../_static/rf_test_tool/phyinit_download_start.png
     :align: center
@@ -238,7 +238,7 @@ PowerLimitTool 可用于配置 Wi-Fi 输出功率，生成单国和多国的 phy
 
 6. 使用 Wi-Fi 仪器测试输出功率，RF Test 可以用于确认 Phy Init 是否生效。
 
-- 打开 `EspRFTestTool 工具 <esp-rf-test-tool>`_
+- 打开 `EspRFTestTool 工具`_
 - 选择对应的 ``ChipType``、``COM``、``BaudRate``、点击 ``Open`` 打开串口；
 - 选择 ``WiFi Test`` 界面，选择 ``Test Mode``、``Rate``、``BandWidth``、``Channel``；
 - 设置 ``Attenuation`` 默认值 0，选择 ``Duty Cycle`` 为 10%；

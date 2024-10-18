@@ -5,9 +5,9 @@ EspRFTestTool Toolkit
 
 The `EspRFTestTool toolkit <https://dl.espressif.com/RF/EspRFTestTool_v3.6_Manual.zip>`_ is an RF test tool provided by Espressif. It contains EspRFTestTool, DownloadTool, and PowerLimitTool.
 
-- `EspRFTestTool <esp-rf-test-tool>`_: Used to perform RF tests;
-- `DownloadTool <download-tool>`_: Used to download the firmware required for RF tests;
-- `PowerLimitTool <power-limit-tool>`_: Used to generate customized phy_init_data firmware.
+- `EspRFTestTool`_: Used to perform RF tests;
+- `DownloadTool`_: Used to download the firmware required for RF tests;
+- `PowerLimitTool`_: Used to generate customized phy_init_data firmware.
 
 .. note::
 
@@ -52,7 +52,7 @@ Download Configuration Area
 
     EspRFTestTool Download Configuration Area
 
-Generally, the `DownloadTool <download-tool>`_ is used to download the firmware required for RF tests. However, for some simple firmware, such as non-signaling test firmware and adaptivity test firmware, EspRFTestTool can be used for quick flashing.
+Generally, the `DownloadTool`_ is used to download the firmware required for RF tests. However, for some simple firmware, such as non-signaling test firmware and adaptivity test firmware, EspRFTestTool can be used for quick flashing.
 
 - Pull down the Boot pin and re-power the chip to enter download mode;
 - By default, flashing is conducted through ``UART``;
@@ -219,16 +219,16 @@ Under the main interface of EspRFTestTool, click ``Tool``, and select ``PowerLim
 
 {IDF_TARGET_RF_NON_SIGNALING_FIRMWARE_ADDRESS:default="0x0", esp32="0x1000", esp32s2="0x1000"}
 
-5. Use `DownloadTool <download-tool>`_ to download generated phy_init_bin file to the products to be tested.
+5. Use `DownloadTool`_ to download generated phy_init_bin file to the products to be tested.
 
 - Select ``DownloadTool`` from ``Tool`` dropdown list to enter the ``DownloadTool`` interface.
-- Flash the phy_init_bin file and corresponding RF test firmware to ``flash`` by referring to the instructions stated i `DownloadTool <download-tool>`__.
+- Flash the phy_init_bin file and corresponding RF test firmware to ``flash`` by referring to the instructions stated `DownloadTool`_.
 - The flashing address of the phy_init_bin file is ``0x1fc000``.
 - The RF test firmware corresponds to the specific test item. {IDF_TARGET_RF_NON_SIGNALING_FIRMWARE_COPY} is taken as an example, whose flashing address is {IDF_TARGET_RF_NON_SIGNALING_FIRMWARE_ADDRESS}.
 
 .. note::
 
-    For the flashing addresses of signaling test firmware, refer to `Wi-Fi Signaling Test <wifi_signaling_test>`_ 与 `Bluetooth LE DTM Test <ble_dtm_test>`_。
+    For the flashing addresses of signaling test firmware, refer to related documents in :doc:`RF Test Items <../rf_test_items/index>`.
 
 .. figure:: ../../../_static/rf_test_tool/phyinit_download_start.png
     :align: center
@@ -238,7 +238,7 @@ Under the main interface of EspRFTestTool, click ``Tool``, and select ``PowerLim
 
 6. Perform an RF test using a Wi-Fi tester to measure the output power and check whether Phy Init works as expected.
 
-- Open `EspRFTestTool <esp-rf-test-tool>`__.
+- Open `EspRFTestTool`_.
 - Select corresponding ``ChipType``, ``COM``, ``BaudRate``, and click ``Open`` to open the serial port.
 - Open the ``WiFi Test`` tab, and select ``Test Mode``, ``Rate``, ``BandWidth`` and ``Channel``.
 - Set ``Attenuation`` to 0, and ``Duty Cycle`` to 10%.
