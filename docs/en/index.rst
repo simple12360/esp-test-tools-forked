@@ -47,5 +47,5 @@ For the development stage, it provides an RF testing tool and detailed test guid
    :caption: Others
 
    FAQ <faq/index>
-   Related Documents and Resources <resources>
+   Related Documentation and Resources <resources>
    Disclaimer and Copyright Notice <copyright>
