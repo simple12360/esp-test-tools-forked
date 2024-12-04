@@ -106,13 +106,7 @@ Two serial port boards (ESP_Factory Test Boards V1.3) are placed inside the bott
 
     A Typical Serial Port Board (ESP_Factory Test Board V1.3)
 
-This serial port board, which has two serial-port chips, is placed inside the bottom box, which can be seen in the figure below. Users should place as many serial port boards as necessary for the specific type of module fixture in operation. For example, the one-to-four module fixture requires four serial port boards.
-
-.. figure:: ../../../_static/test_fixture_manufacturing_inst/serial_boards_placement.png
-    :align: center
-    :scale: 15%
-
-    The Placement of the Serial Port Boards in the Bottom Box
+This serial port board, which has two serial-port chips, is placed inside the bottom box. Users should place as many serial port boards as necessary for the specific type of module fixture in operation. For example, the one-to-four module fixture requires four serial port boards.
 
 It is required that the serial port boards be screwed onto the bottom box so as to keep them stable and prevent any short-circuit in the boards. The serial port boards are fixed by using screws in the four pass-through holes of the boards. In addition, when multiple serial ports are used to connect the HUB, the HUB should be provided with an external power supply to avoid a series of problems caused by insufficient power supply to the serial ports.
 

@@ -35,8 +35,8 @@ The testing steps can be found below, which are also demonstrated in the figure 
 .. note::
 
     - For this scheme, the mass production testing tool provided by the tester supplier should be adaptable with the Espressif IC products;
-    - If the supplier is unable to provide this kind of test tool, customers can alternatively make the tool adaptable by using the tester's available interfaces. Meanwhile, a esp_ram_download_tool is available for customers to download ``RF_Test_FW.bin``:
-        - To obtain the esp_ram_download_tool, please `contact us <https://www.espressif.com/en/company/contact/pre-sale-questions-crm>`__;
+    - If the supplier is unable to provide this kind of test tool, customers can alternatively make the tool adaptable by using the tester's available interfaces. Meanwhile, customers can use esptool to download ``RF_Test_FW.bin``:
+        - esptool can be downloaded from `here <https://github.com/espressif/esptool/releases>`__. For related commands, refer to the `documentation <https://docs.espressif.com/projects/esptool/en/latest/esp32/esptool/advanced-commands.html#load-a-binary-to-ram-load-ram>`__;
         - For the manual testing of ESP products' RF performance, please refer to :doc:`RF Test Items <../../development_stage/rf_test_items/index>`.
     - The test above must be performed in a shielded enclosure.
 
@@ -124,7 +124,7 @@ Production Testing Process
 
 .. note::
 
-    - To speed up the production efficiency, a test fixture is generally designed to be one-to-multiple, which means multiple serial port boards are used: One typical design is one-to-four. With four serial port boards, four DUTs can be placed in one fixture and tested simultaneously.
+    - To enhance production efficiency, test fixtures are typically designed for one-to-multiple configurations. For instance, a common set-up is one-to-four, where a single fixture can accommodate and test four devices simultaneously.
 
     -  For more details about the test fixture manufacturing instruction, please refer to :doc:`Test Fixture Manufacturing Instruction <../instructions/test_fixture_mfg_inst>`.
 

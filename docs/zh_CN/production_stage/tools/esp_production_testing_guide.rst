@@ -35,8 +35,8 @@ RF 综测仪测试方案
 .. note::
 
     - 仪器测试方案需要仪器供应商提供适配乐鑫 IC 的批量产测工具；
-    - 若 RF 仪器工具未适配乐鑫 IC 方案，客户也可以通过仪器可提供的接口完成适配。适配过程中，乐鑫 ``RF_Test_FW.bin`` 下载方式可使用 esp_ram_download_tool 进行下载：
-        - 获得 esp_ram_download_tool，请联系我们；
+    - 若仪器商软件未适配乐鑫 IC 方案，客户也可以通过仪器可提供的接口完成适配。适配过程中，可使用 esptool 下载乐鑫 ``RF_Test_FW.bin``：
+        - esptool 可从 `此处 <https://github.com/espressif/esptool/releases>`__ 进行下载。关于相关指令，请参考 `文档 <https://docs.espressif.com/projects/esptool/en/latest/esp32/esptool/advanced-commands.html#load-a-binary-to-ram-load-ram>`__。
         - 有关乐鑫产品 RF 性能的手动测试，请参考 :doc:`RF 测试项目 <../../development_stage/rf_test_items/index>`。
     - 上述测试需要屏蔽环境。
 
@@ -124,7 +124,7 @@ RF 综测仪测试方案
 
 .. note::
 
-    - 通常生产为了加快生产效率，测试治具可以设计为 1 拖多的方式。一般为 1 拖 4，即一个治具可以放置 4 个待测设备，同时进行测试，内部就是 4 个串口测试底板。
+    - 通常生产为了加快生产效率，测试治具可以设计为 1 拖多的方式。一般为 1 拖 4，即一个治具可以放置 4 个待测设备，同时进行测试。
 
     - 测试治具的制作连接方法可参考乐鑫 :doc:`模组治具规范 <../instructions/test_fixture_mfg_inst>`。
 
