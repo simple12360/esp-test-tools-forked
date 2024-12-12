@@ -9,7 +9,7 @@ The RF non-signaling test firmware environment mainly includes a PC, tester, a U
 
     Test Environment Setup
 
-- **PC** is connected to the USB-to-UART board via USB and to the tester via an Ethernet cable. The PC needs to have the `EspRFTestTool toolkit <https://dl.espressif.com/RF/EspRFTestTool_v3.6_Manual.zip>`_, tester control software, and the driver for the USB-to-UART board installed.
+- **PC** is connected to the USB-to-UART board via USB and to the tester via an Ethernet cable. The PC needs to have the `EspRFTestTool toolkit <https://dl.espressif.com/RF/EspRFTestTool_v3.6_Manual.zip>`__, tester control software, and the driver for the USB-to-UART board installed.
 - **Tester** is used to test the RF performance of the DUT in different modes. Typically, it is the WT-328/IQXel tester.
 - **USB-to-UART board** is used to communicate between the PC and the DUT.
 - **Device under test (DUT)** refers to a product designed based on the {IDF_TARGET_NAME} chip or module. It is connected to the USB-to-UART board via UART and to the tester via an RF connection cable. The DUT is usually placed inside a shield box.
@@ -37,7 +37,7 @@ Conduction Test
 Flash Firmware
 --------------
 
-{IDF_TARGET_RF_NON_SIGNALING_FIRMWARE:default="Not Updated", esp32="`ESP32 RF Non-Signaling Test Firmware <https://dl.espressif.com/rf/esp32/ESP32_RFTest_190_8cac24c_20230710.bin>`__", esp32c2="`ESP32-C2 RF Non-Signaling Test Firmware <https://dl.espressif.com/rf/esp32c2/ESP32-C2_RFTest_Bin_26M_98a091b_20230621.bin>`__", esp32c3="`ESP32-C3 RF Non-Signaling Test Firmware <https://dl.espressif.com/rf/esp32c3/ESP32-C3_RF_TEST_BIN_V114_1ac85ea_20230504.bin>`__", esp32c6="`ESP32-C6 RF Non-Signaling Test Firmware <https://dl.espressif.com/rf/esp32c6/ESP32-C6_RFTest_Bin_26f46b0_20230621.bin>`__", esp32s2="`ESP32-S2 RF Non-Signaling Test Firmware <https://dl.espressif.com/rf/esp32s2/ESP32-S2_RF_TEST_BIN_20220902_05bde8b.bin>`__", esp32s3="`ESP32-S3 RF Non-Signaling Test Firmware <https://dl.espressif.com/rf/esp32s3/ESP32-S3_RF_TEST_BIN_V110_25c811a_20230504.bin>`__", esp8266="`ESP8266 RF Non-Signaling Test Firmware (26 MHz) <https://dl.espressif.com/RF/ESP8266_RFTest_153_20231018_26M.bin>`__ or `ESP8266 RF Non-Signaling Test Firmware (40 MHz) <https://dl.espressif.com/RF/ESP8266_RFTest_153_20231020_40M.bin>`__", esp32h2="`ESP32-H2 RF Non-Signaling Test Firmware <https://dl.espressif.com/rf/esp32h2/ESP32-H2_RFTest_Bin_5b55c8f_20231010.bin>`__"}
+{IDF_TARGET_RF_NON_SIGNALING_FIRMWARE:default="Not Updated", esp32="|ESP32 RF Non-Signaling Test Firmware|", esp32c2="|ESP32-C2 RF Non-Signaling Test Firmware|", esp32c3="|ESP32-C3 RF Non-Signaling Test Firmware|", esp32c6="|ESP32-C6 RF Non-Signaling Test Firmware|", esp32s2="|ESP32-S2 RF Non-Signaling Test Firmware|", esp32s3="|ESP32-S3 RF Non-Signaling Test Firmware|", esp8266="|ESP8266 RF Non-Signaling Test Firmware (26 MHz) or ESP8266 RF Non-Signaling Test Firmware (40 MHz)|", esp32h2="|ESP32-H2 RF Non-Signaling Test Firmware|"}
 
 1. Open :ref:`esp-rf-test-tool`.
 
@@ -60,3 +60,12 @@ Flash Firmware
     :scale: 80%
 
     ESPRFTestTool Configuration
+
+.. |ESP32 RF Non-Signaling Test Firmware| replace:: `ESP32 RF Non-Signaling Test Firmware <https://dl.espressif.com/rf/esp32/ESP32_RFTest_190_8cac24c_20230710.bin>`__
+.. |ESP32-C2 RF Non-Signaling Test Firmware| replace:: `ESP32-C2 RF Non-Signaling Test Firmware <https://dl.espressif.com/rf/esp32c2/ESP32-C2_RFTest_Bin_26M_98a091b_20230621.bin>`__
+.. |ESP32-C3 RF Non-Signaling Test Firmware| replace:: `ESP32-C3 RF Non-Signaling Test Firmware <https://dl.espressif.com/rf/esp32c3/ESP32-C3_RF_TEST_BIN_V114_1ac85ea_20230504.bin>`__
+.. |ESP32-C6 RF Non-Signaling Test Firmware| replace:: `ESP32-C6 RF Non-Signaling Test Firmware <https://dl.espressif.com/rf/esp32c6/ESP32-C6_RFTest_Bin_26f46b0_20230621.bin>`__
+.. |ESP32-S2 RF Non-Signaling Test Firmware| replace:: `ESP32-S2 RF Non-Signaling Test Firmware <https://dl.espressif.com/rf/esp32s2/ESP32-S2_RF_TEST_BIN_20220902_05bde8b.bin>`__
+.. |ESP32-S3 RF Non-Signaling Test Firmware| replace:: `ESP32-S3 RF Non-Signaling Test Firmware <https://dl.espressif.com/rf/esp32s3/ESP32-S3_RF_TEST_BIN_V110_25c811a_20230504.bin>`__
+.. |ESP8266 RF Non-Signaling Test Firmware (26 MHz) or ESP8266 RF Non-Signaling Test Firmware (40 MHz)| replace:: `ESP8266 RF Non-Signaling Test Firmware (26 MHz) <https://dl.espressif.com/RF/ESP8266_RFTest_153_20231018_26M.bin>`__ or `ESP8266 RF Non-Signaling Test Firmware (40 MHz) <https://dl.espressif.com/RF/ESP8266_RFTest_153_20231020_40M.bin>`__
+.. |ESP32-H2 RF Non-Signaling Test Firmware| replace:: `ESP32-H2 RF Non-Signaling Test Firmware <https://dl.espressif.com/rf/esp32h2/ESP32-H2_RFTest_Bin_5b55c8f_20231010.bin>`__

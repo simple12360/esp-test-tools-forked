@@ -3,7 +3,7 @@ EspRFTestTool Toolkit
 
 :link_to_translation:`zh_CN:[中文]`
 
-The `EspRFTestTool toolkit <https://dl.espressif.com/RF/EspRFTestTool_v3.6_Manual.zip>`_ is an RF test tool provided by Espressif. It contains EspRFTestTool, DownloadTool, and PowerLimitTool.
+The `EspRFTestTool toolkit <https://dl.espressif.com/RF/EspRFTestTool_v3.6_Manual.zip>`__ is an RF test tool provided by Espressif. It contains EspRFTestTool, DownloadTool, and PowerLimitTool.
 
 - `EspRFTestTool`_: Used to perform RF tests;
 - `DownloadTool`_: Used to download the firmware required for RF tests;
@@ -215,7 +215,7 @@ Under the main interface of EspRFTestTool, click ``Tool``, and select ``PowerLim
     3. Selecting ``Multiple Country`` will generate Combined phy_init_bin files, including a Default bing file and seven others for SRRC, FCC, CE, NCC, KCC, MIC, and IC. The combined files contain 8*128 bytes.
     4. Selecting `Custom` will generate a single or multiple certification bin files based on your choice.
 
-{IDF_TARGET_RF_NON_SIGNALING_FIRMWARE_COPY:default="Not Updated", esp32="`ESP32 RF Non-Signaling Test Firmware <https://dl.espressif.com/rf/esp32/ESP32_RFTest_190_8cac24c_20230710.bin>`__", esp32c2="`ESP32-C2 RF Non-Signaling Test Firmware <https://dl.espressif.com/rf/esp32c2/ESP32-C2_RFTest_Bin_26M_98a091b_20230621.bin>`__", esp32c3="`ESP32-C3 RF Non-Signaling Test Firmware <https://dl.espressif.com/rf/esp32c3/ESP32-C3_RF_TEST_BIN_V114_1ac85ea_20230504.bin>`__", esp32c6="`ESP32-C6 RF Non-Signaling Test Firmware <https://dl.espressif.com/rf/esp32c6/ESP32-C6_RFTest_Bin_26f46b0_20230621.bin>`__", esp32s2="`ESP32-S2 RF Non-Signaling Test Firmware <https://dl.espressif.com/rf/esp32s2/ESP32-S2_RF_TEST_BIN_20220902_05bde8b.bin>`__", esp32s3="`ESP32-S3 RF Non-Signaling Test Firmware <https://dl.espressif.com/rf/esp32s3/ESP32-S3_RF_TEST_BIN_V110_25c811a_20230504.bin>`__", esp8266="`ESP8266 RF Non-Signaling Test Firmware (26 MHz) <https://dl.espressif.com/RF/ESP8266_RFTest_153_20231018_26M.bin>`__ or `ESP8266 RF Non-Signaling Test Firmware (40 MHz) <https://dl.espressif.com/RF/ESP8266_RFTest_153_20231020_40M.bin>`__", esp32h2="`ESP32-H2 RF Non-Signaling Test Firmware <https://dl.espressif.com/rf/esp32h2/ESP32-H2_RFTest_Bin_5b55c8f_20231010.bin>`__"}
+{IDF_TARGET_RF_NON_SIGNALING_FIRMWARE_COPY:default="Not Updated", esp32="|ESP32 RF Non-Signaling Test Firmware|", esp32c2="|ESP32-C2 RF Non-Signaling Test Firmware|", esp32c3="|ESP32-C3 RF Non-Signaling Test Firmware|", esp32c6="|ESP32-C6 RF Non-Signaling Test Firmware|", esp32s2="|ESP32-S2 RF Non-Signaling Test Firmware|", esp32s3="|ESP32-S3 RF Non-Signaling Test Firmware|", esp8266="|ESP8266 RF Non-Signaling Test Firmware (26 MHz) or ESP8266 RF Non-Signaling Test Firmware (40 MHz)|", esp32h2="|ESP32-H2 RF Non-Signaling Test Firmware|"}
 
 {IDF_TARGET_RF_NON_SIGNALING_FIRMWARE_ADDRESS:default="0x0", esp32="0x1000", esp32s2="0x1000"}
 
@@ -339,3 +339,12 @@ Under the main interface of EspRFTestTool, click ``Tool``, and select ``PowerLim
           - 18.5
         * - 11n-40 MCS7
           - 17
+
+.. |ESP32 RF Non-Signaling Test Firmware| replace:: `ESP32 RF Non-Signaling Test Firmware <https://dl.espressif.com/rf/esp32/ESP32_RFTest_190_8cac24c_20230710.bin>`__
+.. |ESP32-C2 RF Non-Signaling Test Firmware| replace:: `ESP32-C2 RF Non-Signaling Test Firmware <https://dl.espressif.com/rf/esp32c2/ESP32-C2_RFTest_Bin_26M_98a091b_20230621.bin>`__
+.. |ESP32-C3 RF Non-Signaling Test Firmware| replace:: `ESP32-C3 RF Non-Signaling Test Firmware <https://dl.espressif.com/rf/esp32c3/ESP32-C3_RF_TEST_BIN_V114_1ac85ea_20230504.bin>`__
+.. |ESP32-C6 RF Non-Signaling Test Firmware| replace:: `ESP32-C6 RF Non-Signaling Test Firmware <https://dl.espressif.com/rf/esp32c6/ESP32-C6_RFTest_Bin_26f46b0_20230621.bin>`__
+.. |ESP32-S2 RF Non-Signaling Test Firmware| replace:: `ESP32-S2 RF Non-Signaling Test Firmware <https://dl.espressif.com/rf/esp32s2/ESP32-S2_RF_TEST_BIN_20220902_05bde8b.bin>`__
+.. |ESP32-S3 RF Non-Signaling Test Firmware| replace:: `ESP32-S3 RF Non-Signaling Test Firmware <https://dl.espressif.com/rf/esp32s3/ESP32-S3_RF_TEST_BIN_V110_25c811a_20230504.bin>`__
+.. |ESP8266 RF Non-Signaling Test Firmware (26 MHz) or ESP8266 RF Non-Signaling Test Firmware (40 MHz)| replace:: `ESP8266 RF Non-Signaling Test Firmware (26 MHz) <https://dl.espressif.com/RF/ESP8266_RFTest_153_20231018_26M.bin>`__ or `ESP8266 RF Non-Signaling Test Firmware (40 MHz) <https://dl.espressif.com/RF/ESP8266_RFTest_153_20231020_40M.bin>`__
+.. |ESP32-H2 RF Non-Signaling Test Firmware| replace:: `ESP32-H2 RF Non-Signaling Test Firmware <https://dl.espressif.com/rf/esp32h2/ESP32-H2_RFTest_Bin_5b55c8f_20231010.bin>`__

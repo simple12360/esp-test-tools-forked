@@ -1,5 +1,5 @@
-Setting Up the Test Environment
----------------------------------
+Set Up Test Environment
+-----------------------
 
 .. figure:: ../../../_static/rf_test_tool/usb_to_uart_connection.png
     :align: center
@@ -15,10 +15,10 @@ The **Device Under Test (DUT)** is a product designed based on Espressif chips o
     - Some serial communication boards have already swapped RXD and TXD internally, so there is no need to reverse them. The wiring should be adjusted according to the actual situation.
     - Espressif chips have a power-on self-calibration function, so the RF connection line must be connected to the test instrument before the DUT is powered on for testing.
 
-Firmware Burning
-------------------
+Flash Firmware
+--------------
 
-{IDF_TARGET_WIFI_BLOCKING_ADAPTIVITY_FIRMWARE:default="Not updated", esp32="`ESP32 Wi-Fi Adaptivity Test/Blocking Test Firmware <https://dl.espressif.com/rf/esp32/ESP32_wifi_Adaptivity&Blocking_20210420.bin>`__", esp32c2="`ESP32-C2 Wi-Fi Adaptivity Test/Blocking Test Firmware <https://dl.espressif.com/rf/esp32c2/ESP32C2_WiFi_Adaptivity&Blocking_26M_20240416.bin>`__", esp32c3="`ESP32-C3 Wi-Fi Adaptivity Test/Blocking Test Firmware <https://dl.espressif.com/rf/esp32c3/ESP32C3_wifi_Adaptivity&Blocking_20220627.bin>`__", esp32c6="`ESP32-C6 Wi-Fi Adaptivity Test/Blocking Test Firmware <https://dl.espressif.com/rf/esp32c6/ESP32C6_wifi_Adaptivity&Blocking_20230704.bin>`__", esp32s2="`ESP32-S2 Wi-Fi Adaptivity Test/Blocking Test Firmware <https://dl.espressif.com/rf/esp32s2/ESP32S2_wifi_Adaptivity&Blocking_20220826.bin>`__", esp32s3="`ESP32-S3 Wi-Fi Adaptivity Test/Blocking Test Firmware <https://dl.espressif.com/rf/esp32s3/ESP32S3_wifi_Adaptivity&Blocking_20230328.bin>`__", esp8266="`ES8266 Wi-Fi Adaptivity Test/Blocking Test Firmware <https://dl.espressif.com/RF/ESP8266&8285_adaptivity&blocking_bin_20220824_115200.bin>`__"}
+{IDF_TARGET_WIFI_BLOCKING_ADAPTIVITY_FIRMWARE:default="Not updated", esp32="|ESP32 Wi-Fi Adaptivity Test/Blocking Test Firmware|", esp32c2="|ESP32-C2 Wi-Fi Adaptivity Test/Blocking Test Firmware|", esp32c3="|ESP32-C3 Wi-Fi Adaptivity Test/Blocking Test Firmware|", esp32c6="|ESP32-C6 Wi-Fi Adaptivity Test/Blocking Test Firmware|", esp32s2="|ESP32-S2 Wi-Fi Adaptivity Test/Blocking Test Firmware|", esp32s3="|ESP32-S3 Wi-Fi Adaptivity Test/Blocking Test Firmware|", esp8266="|ES8266 Wi-Fi Adaptivity Test/Blocking Test Firmware|"}
 
 {IDF_TARGET_FLASH_ADDRESS:default="0x0", esp32="0x1000", esp32s2="0x1000"}
 
@@ -26,7 +26,7 @@ Firmware Burning
 
 2. Set ``ChipType``, ``Com Port``, ``Baud Rate``, click ``Open``, select to download to ``Flash``.
 
-3. Burn {IDF_TARGET_WIFI_BLOCKING_ADAPTIVITY_FIRMWARE} to {IDF_TARGET_FLASH_ADDRESS} via ``UART``.
+3. Flash {IDF_TARGET_WIFI_BLOCKING_ADAPTIVITY_FIRMWARE} to {IDF_TARGET_FLASH_ADDRESS} via ``UART``.
 
 .. only:: esp32 or esp32s2
 
@@ -34,7 +34,7 @@ Firmware Burning
         :align: center
         :scale: 80%
 
-        Firmware Burning Diagram
+        Flashing Firmware
 
 .. only:: not esp32 and not esp32s2
 
@@ -42,15 +42,15 @@ Firmware Burning
         :align: center
         :scale: 80%
 
-        Firmware Burning Diagram
+        Flashing Firmware
 
-After the burning is completed, continue with the following steps for the adaptivity test.
+After the flashing is completed, continue with the following steps for the adaptivity test.
 
 Start Testing
----------------------------
+-------------
 
-View Power-on Print
-^^^^^^^^^^^^^^^^^^^^^
+Check Power-on log
+^^^^^^^^^^^^^^^^^^
 
 Use a serial communication tool, such as `Friendly Serial Assistant <http://alithon.com/downloads>`__, configure the port number, set the baud rate to 115200, if the serial port prints similar information after the device is powered on again, you can confirm that the test status is OK:
 
@@ -59,3 +59,11 @@ Use a serial communication tool, such as `Friendly Serial Assistant <http://alit
     :scale: 80%
 
     Device Power-on Serial Port Print Log
+
+.. |ESP32 Wi-Fi Adaptivity Test/Blocking Test Firmware| replace:: `ESP32 Wi-Fi Adaptivity Test/Blocking Test Firmware <https://dl.espressif.com/rf/esp32/ESP32_wifi_Adaptivity&Blocking_20210420.bin>`__
+.. |ESP32-C2 Wi-Fi Adaptivity Test/Blocking Test Firmware| replace:: `ESP32-C2 Wi-Fi Adaptivity Test/Blocking Test Firmware <https://dl.espressif.com/rf/esp32c2/ESP32C2_WiFi_Adaptivity&Blocking_26M_20240416.bin>`__
+.. |ESP32-C3 Wi-Fi Adaptivity Test/Blocking Test Firmware| replace:: `ESP32-C3 Wi-Fi Adaptivity Test/Blocking Test Firmware <https://dl.espressif.com/rf/esp32c3/ESP32C3_wifi_Adaptivity&Blocking_20220627.bin>`__
+.. |ESP32-C6 Wi-Fi Adaptivity Test/Blocking Test Firmware| replace:: `ESP32-C6 Wi-Fi Adaptivity Test/Blocking Test Firmware <https://dl.espressif.com/rf/esp32c6/ESP32C6_wifi_Adaptivity&Blocking_20230704.bin>`__
+.. |ESP32-S2 Wi-Fi Adaptivity Test/Blocking Test Firmware| replace:: `ESP32-S2 Wi-Fi Adaptivity Test/Blocking Test Firmware <https://dl.espressif.com/rf/esp32s2/ESP32S2_wifi_Adaptivity&Blocking_20220826.bin>`__
+.. |ESP32-S3 Wi-Fi Adaptivity Test/Blocking Test Firmware| replace:: `ESP32-S3 Wi-Fi Adaptivity Test/Blocking Test Firmware <https://dl.espressif.com/rf/esp32s3/ESP32S3_wifi_Adaptivity&Blocking_20230328.bin>`__
+.. |ES8266 Wi-Fi Adaptivity Test/Blocking Test Firmware| replace:: `ES8266 Wi-Fi Adaptivity Test/Blocking Test Firmware <https://dl.espressif.com/RF/ESP8266&8285_adaptivity&blocking_bin_20220824_115200.bin>`__
