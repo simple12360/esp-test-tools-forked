@@ -808,4 +808,4 @@ The firmware version verification test is enabled if the option ``USER_FW_CHECK`
 Certification
 -----------------
 
-Download certificates for Espressif products from `Certificates <https://www.espressif.com/en/certificates>`_.
+Download certificates for Espressif products from `Certificates <https://www.espressif.com/en/certificates>`__.

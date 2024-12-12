@@ -14,7 +14,7 @@ Set Up Test Environment
 
     Test Environment Setup
 
-- **PC** is connected to the USB-to-UART board via USB. The PC needs to have the `EspRFTestTool toolkit <https://dl.espressif.com/RF/EspRFTestTool_v3.6_Manual.zip>`_, tester control software, and the driver for the USB-to-UART board installed.
+- **PC** is connected to the USB-to-UART board via USB. The PC needs to have the `EspRFTestTool toolkit <https://dl.espressif.com/RF/EspRFTestTool_v3.6_Manual.zip>`__, tester control software, and the driver for the USB-to-UART board installed.
 - **Tester** is used to test the RF performance of the device under test (DUT) in different modes. It connects to DUT via an RF connection cable to transmit RF signals. Typically, it is CMW500, CMW270, or Bluetooth tester CBT.
 - **USB-to-UART board** is used to communicate between the computer and the DUT, as well as between the tester and the DUT.
 - **Device under test (DUT)** refers to a product designed based on the {IDF_TARGET_NAME} chip or module.
@@ -41,7 +41,7 @@ Conduction Test
 Flash Firmware
 --------------
 
-{IDF_TARGET_BLE_DTM_FIRMWARE:default="Not Updated", esp32c2="`ESP32-C2 Bluetooth LE DTM Test Firmware <https://dl.espressif.com/rf/esp32c2/ESP32C2_DTM_HCI_CMD_26M_20230301.zip>`_", esp32c3="`ESP32-C3 Bluetooth LE DTM Test Firmware <https://dl.espressif.com/rf/esp32c3/ESP32C3_DTM_HCI_20230724.zip>`_", esp32c6="`ESP32-C6 Bluetooth LE DTM Test Firmware <https://dl.espressif.com/rf/esp32c6/ESP32C6-ECO1_DTM_HCI_d1caf30_20230407.zip>`_", esp32s3="`ESP32-S3 Bluetooth LE DTM Test Firmware <https://dl.espressif.com/rf/esp32s3/ESP32S3_BLE_HCI_cb74f83_20220518.zip>`_", esp32h2="`ESP32-H2 Bluetooth LE DTM Test Firmware <https://dl.espressif.com/rf/esp32h2/ESP32H2_BLE_DTM_Bin_20230811.bin>`_"}
+{IDF_TARGET_BLE_DTM_FIRMWARE:default="Not Updated", esp32c2="|ESP32-C2 Bluetooth LE DTM Test Firmware|", esp32c3="|ESP32-C3 Bluetooth LE DTM Test Firmware|", esp32c6="|ESP32-C6 Bluetooth LE DTM Test Firmware|", esp32s3="|ESP32-S3 Bluetooth LE DTM Test Firmware|", esp32h2="|ESP32-H2 Bluetooth LE DTM Test Firmware|"}
 
 1. Open :ref:`download-tool`.
 
@@ -100,3 +100,9 @@ If you need to adjust the UART1 settings, you can input the corresponding comman
 
     //Configure flow control to be disabled and set the baud rate to 115200
     bqb -z set_uart_param -f 0 -b 115200
+
+.. |ESP32-C2 Bluetooth LE DTM Test Firmware| replace:: `ESP32-C2 Bluetooth LE DTM Test Firmware <https://dl.espressif.com/rf/esp32c2/ESP32C2_DTM_HCI_CMD_26M_20230301.zip>`__
+.. |ESP32-C3 Bluetooth LE DTM Test Firmware| replace:: `ESP32-C3 Bluetooth LE DTM Test Firmware <https://dl.espressif.com/rf/esp32c3/ESP32C3_DTM_HCI_20230724.zip>`__
+.. |ESP32-C6 Bluetooth LE DTM Test Firmware| replace:: `ESP32-C6 Bluetooth LE DTM Test Firmware <https://dl.espressif.com/rf/esp32c6/ESP32C6-ECO1_DTM_HCI_d1caf30_20230407.zip>`__
+.. |ESP32-S3 Bluetooth LE DTM Test Firmware| replace:: `ESP32-S3 Bluetooth LE DTM Test Firmware <https://dl.espressif.com/rf/esp32s3/ESP32S3_BLE_HCI_cb74f83_20220518.zip>`__
+.. |ESP32-H2 Bluetooth LE DTM Test Firmware| replace:: `ESP32-H2 Bluetooth LE DTM Test Firmware <https://dl.espressif.com/rf/esp32h2/ESP32H2_BLE_DTM_Bin_20230811.bin>`__

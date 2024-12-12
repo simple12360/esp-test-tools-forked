@@ -215,7 +215,7 @@ PowerLimitTool 可用于配置 Wi-Fi 输出功率，生成单国和多国的 phy
     3. 选择 ``Multiple Country`` 会生成包含 Default 和 SRRC、FCC、CE、NCC、KCC、MIC 与 IC 七国认证的 Combined phy_init_bin 文件，包含了 8*128 字节。
     4. 选择 ``Custom``，根据自定义选择生成单个或多国认证 phy_init_bin 文件。
 
-{IDF_TARGET_RF_NON_SIGNALING_FIRMWARE_COPY:default="未更新", esp32="`ESP32 射频非信令测试固件 <https://dl.espressif.com/rf/esp32/ESP32_RFTest_190_8cac24c_20230710.bin>`__", esp32c2="`ESP32-C2 射频非信令测试固件 <https://dl.espressif.com/rf/esp32c2/ESP32-C2_RFTest_Bin_26M_98a091b_20230621.bin>`__", esp32c3="`ESP32-C3 射频非信令测试固件 <https://dl.espressif.com/rf/esp32c3/ESP32-C3_RF_TEST_BIN_V114_1ac85ea_20230504.bin>`__", esp32c6="`ESP32-C6 射频非信令测试固件 <https://dl.espressif.com/rf/esp32c6/ESP32-C6_RFTest_Bin_26f46b0_20230621.bin>`__", esp32s2="`ESP32-S2 射频非信令测试固件 <https://dl.espressif.com/rf/esp32s2/ESP32-S2_RF_TEST_BIN_20220902_05bde8b.bin>`__", esp32s3="`ESP32-S3 射频非信令测试固件 <https://dl.espressif.com/rf/esp32s3/ESP32-S3_RF_TEST_BIN_V110_25c811a_20230504.bin>`__", esp8266="`ESP8266 射频非信令测试固件 (26 MHz) <https://dl.espressif.com/RF/ESP8266_RFTest_153_20231018_26M.bin>`__ 或 `ESP8266 射频非信令测试固件 (40 MHz) <https://dl.espressif.com/RF/ESP8266_RFTest_153_20231020_40M.bin>`__", esp32h2="`ESP32-H2 RF Non-Signaling Test Firmware <https://dl.espressif.com/rf/esp32h2/ESP32-H2_RFTest_Bin_5b55c8f_20231010.bin>`__"}
+{IDF_TARGET_RF_NON_SIGNALING_FIRMWARE_COPY:default="Not Updated", esp32="|ESP32 射频非信令测试固件|", esp32c2="|ESP32-C2 射频非信令测试固件|", esp32c3="|ESP32-C3 射频非信令测试固件|", esp32c6="|ESP32-C6 射频非信令测试固件|", esp32s2="|ESP32-S2 射频非信令测试固件|", esp32s3="|ESP32-S3 射频非信令测试固件|", esp8266="|ESP8266 射频非信令测试固件 (26 MHz) or ESP8266 射频非信令测试固件 (40 MHz)|", esp32h2="|ESP32-H2 射频非信令测试固件|"}
 
 {IDF_TARGET_RF_NON_SIGNALING_FIRMWARE_ADDRESS:default="0x0", esp32="0x1000", esp32s2="0x1000"}
 
@@ -339,3 +339,12 @@ PowerLimitTool 可用于配置 Wi-Fi 输出功率，生成单国和多国的 phy
           - 18.5
         * - 11n-40 MCS7
           - 17
+
+.. |ESP32 射频非信令测试固件| replace:: `ESP32 射频非信令测试固件 <https://dl.espressif.com/rf/esp32/ESP32_RFTest_190_8cac24c_20230710.bin>`__
+.. |ESP32-C2 射频非信令测试固件| replace:: `ESP32-C2 射频非信令测试固件 <https://dl.espressif.com/rf/esp32c2/ESP32-C2_RFTest_Bin_26M_98a091b_20230621.bin>`__
+.. |ESP32-C3 射频非信令测试固件| replace:: `ESP32-C3 射频非信令测试固件 <https://dl.espressif.com/rf/esp32c3/ESP32-C3_RF_TEST_BIN_V114_1ac85ea_20230504.bin>`__
+.. |ESP32-C6 射频非信令测试固件| replace:: `ESP32-C6 射频非信令测试固件 <https://dl.espressif.com/rf/esp32c6/ESP32-C6_RFTest_Bin_26f46b0_20230621.bin>`__
+.. |ESP32-S2 射频非信令测试固件| replace:: `ESP32-S2 射频非信令测试固件 <https://dl.espressif.com/rf/esp32s2/ESP32-S2_RF_TEST_BIN_20220902_05bde8b.bin>`__
+.. |ESP32-S3 射频非信令测试固件| replace:: `ESP32-S3 射频非信令测试固件 <https://dl.espressif.com/rf/esp32s3/ESP32-S3_RF_TEST_BIN_V110_25c811a_20230504.bin>`__
+.. |ESP8266 射频非信令测试固件 (26 MHz) or ESP8266 射频非信令测试固件 (40 MHz)| replace:: `ESP8266 射频非信令测试固件 (26 MHz) <https://dl.espressif.com/RF/ESP8266_RFTest_153_20231018_26M.bin>`__ or `ESP8266 射频非信令测试固件 (40 MHz) <https://dl.espressif.com/RF/ESP8266_RFTest_153_20231020_40M.bin>`__
+.. |ESP32-H2 射频非信令测试固件| replace:: `ESP32-H2 射频非信令测试固件 <https://dl.espressif.com/rf/esp32h2/ESP32-H2_RFTest_Bin_5b55c8f_20231010.bin>`__

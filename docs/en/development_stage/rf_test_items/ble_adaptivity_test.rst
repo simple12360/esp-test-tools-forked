@@ -32,7 +32,7 @@ Set Up Test Environment
 Flash Firmware
 --------------
 
-{IDF_TARGET_BLE_ADAPTIVITY_FIRMWARE:default="Not updated", esp32c2="`ESP32-C2 Bluetooth LE Adaptivity Test Firmware <https://dl.espressif.com/rf/esp32c2/ESP32C2_BLE_Adaptivity_bin_20230704.bin>`_", esp32c3="`ESP32-C3 Bluetooth LE Adaptivity Test Firmware <https://dl.espressif.com/rf/esp32c3/ESP32C3_BLE_Adaptivity_bin_20230704.bin>`_", esp32c6="`ESP32-C6 Bluetooth LE Adaptivity Test Firmware <https://dl.espressif.com/rf/esp32c6/ESP32C6_BLE_Adaptivity_bin_20230704.bin>`_", esp32s3="`ESP32-S3 Bluetooth LE Adaptivity Test Firmware <https://dl.espressif.com/rf/esp32s3/ESP32S3_BLE_Adaptivity_bin_20230704.bin>`_", esp32h2="`ESP32-H2 Bluetooth LE Adaptivity Test Firmware <https://dl.espressif.com/rf/esp32h2/ESP32H2_BLE_Adaptivity_bin_20230704.bin>`_"}
+{IDF_TARGET_BLE_ADAPTIVITY_FIRMWARE:default="Not updated", esp32c2="|ESP32-C2 Bluetooth LE Adaptivity Test Firmware|", esp32c3="|ESP32-C3 Bluetooth LE Adaptivity Test Firmware|", esp32c6="|ESP32-C6 Bluetooth LE Adaptivity Test Firmware|", esp32s3="|ESP32-S3 Bluetooth LE Adaptivity Test Firmware|", esp32h2="|ESP32-H2 Bluetooth LE Adaptivity Test Firmware|"}
 
 1. Open :ref:`download-tool`.
 
@@ -90,3 +90,9 @@ Enter the commands in the Slave and Master devices in order:
   reboot
 
 After entering the above commands, you can continue with the Bluetooth LE Adaptivity Test.
+
+.. |ESP32-C2 Bluetooth LE Adaptivity Test Firmware| replace:: `ESP32-C2 Bluetooth LE Adaptivity Test Firmware <https://dl.espressif.com/rf/esp32c2/ESP32C2_BLE_Adaptivity_bin_20230704.bin>`__
+.. |ESP32-C3 Bluetooth LE Adaptivity Test Firmware| replace:: `ESP32-C3 Bluetooth LE Adaptivity Test Firmware <https://dl.espressif.com/rf/esp32c3/ESP32C3_BLE_Adaptivity_bin_20230704.bin>`__
+.. |ESP32-C6 Bluetooth LE Adaptivity Test Firmware| replace:: `ESP32-C6 Bluetooth LE Adaptivity Test Firmware <https://dl.espressif.com/rf/esp32c6/ESP32C6_BLE_Adaptivity_bin_20230704.bin>`__
+.. |ESP32-S3 Bluetooth LE Adaptivity Test Firmware| replace:: `ESP32-S3 Bluetooth LE Adaptivity Test Firmware <https://dl.espressif.com/rf/esp32s3/ESP32S3_BLE_Adaptivity_bin_20230704.bin>`__
+.. |ESP32-H2 Bluetooth LE Adaptivity Test Firmware| replace:: `ESP32-H2 Bluetooth LE Adaptivity Test Firmware <https://dl.espressif.com/rf/esp32h2/ESP32H2_BLE_Adaptivity_bin_20230704.bin>`__

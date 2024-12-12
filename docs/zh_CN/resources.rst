@@ -7,13 +7,13 @@
 
     - `芯片规格书 (PDF) <{IDF_TARGET_DATASHEET_CN_URL}>`__
     - `技术参考手册 (PDF) <{IDF_TARGET_TRM_CN_URL}>`__
-    :esp32: - `芯片勘误表 (PDF) <https://espressif.com/sites/default/files/documentation/eco_and_workarounds_for_bugs_in_esp32_cn.pdf>`_
-    :esp32s2: - `芯片勘误表 (PDF) <https://www.espressif.com/sites/default/files/documentation/esp32-s2_errata_cn.pdf>`_
-    :esp32s3: - `芯片勘误表 (PDF) <https://www.espressif.com/sites/default/files/documentation/esp32-s3_errata_cn.pdf>`_
-    :esp32c3: - `芯片勘误表 (PDF) <https://www.espressif.com/sites/default/files/documentation/esp32-c3_errata_cn.pdf>`_
-    :esp32c2: - `芯片勘误表 (PDF) <https://www.espressif.com/sites/default/files/documentation/esp8684_errata_cn.pdf>`_
-    :esp32c6: - `芯片勘误表 (PDF) <https://www.espressif.com/sites/default/files/documentation/esp32-c6_errata_cn.pdf>`_
-    :esp32h2: - `芯片勘误表 (PDF) <https://www.espressif.com/sites/default/files/documentation/esp32-h2_errata_cn.pdf>`_
+    :esp32: - `芯片勘误表 (PDF) <https://espressif.com/sites/default/files/documentation/eco_and_workarounds_for_bugs_in_esp32_cn.pdf>`__
+    :esp32s2: - `芯片勘误表 (PDF) <https://www.espressif.com/sites/default/files/documentation/esp32-s2_errata_cn.pdf>`__
+    :esp32s3: - `芯片勘误表 (PDF) <https://www.espressif.com/sites/default/files/documentation/esp32-s3_errata_cn.pdf>`__
+    :esp32c3: - `芯片勘误表 (PDF) <https://www.espressif.com/sites/default/files/documentation/esp32-c3_errata_cn.pdf>`__
+    :esp32c2: - `芯片勘误表 (PDF) <https://www.espressif.com/sites/default/files/documentation/esp8684_errata_cn.pdf>`__
+    :esp32c6: - `芯片勘误表 (PDF) <https://www.espressif.com/sites/default/files/documentation/esp32-c6_errata_cn.pdf>`__
+    :esp32h2: - `芯片勘误表 (PDF) <https://www.espressif.com/sites/default/files/documentation/esp32-h2_errata_cn.pdf>`__
     - `{IDF_TARGET_NAME} 系列芯片 <https://espressif.com/zh-hans/products/socs?id={IDF_TARGET_NAME}>`__
     - `{IDF_TARGET_NAME} 系列模组 <https://espressif.com/zh-hans/products/modules?id={IDF_TARGET_NAME}>`__
     - `{IDF_TARGET_NAME} 系列开发板 <https://www.espressif.com/zh-hans/products/devkits?id={IDF_TARGET_NAME}>`__

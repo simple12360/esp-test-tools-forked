@@ -32,7 +32,7 @@
 烧录固件
 ------------------
 
-{IDF_TARGET_BLE_ADAPTIVITY_FIRMWARE:default="未更新", esp32c2="`ESP32-C2 低功耗蓝牙自适应测试固件 <https://dl.espressif.com/rf/esp32c2/ESP32C2_BLE_Adaptivity_bin_20230704.bin>`_", esp32c3="`ESP32-C3 低功耗蓝牙自适应测试固件 <https://dl.espressif.com/rf/esp32c3/ESP32C3_BLE_Adaptivity_bin_20230704.bin>`_", esp32c6="`ESP32-C6 低功耗蓝牙自适应测试固件 <https://dl.espressif.com/rf/esp32c6/ESP32C6_BLE_Adaptivity_bin_20230704.bin>`_", esp32s3="`ESP32-S3 低功耗蓝牙自适应测试固件 <https://dl.espressif.com/rf/esp32s3/ESP32S3_BLE_Adaptivity_bin_20230704.bin>`_", esp32h2="`ESP32-H2 低功耗蓝牙自适应测试固件 <https://dl.espressif.com/rf/esp32h2/ESP32H2_BLE_Adaptivity_bin_20230704.bin>`_"}
+{IDF_TARGET_BLE_ADAPTIVITY_FIRMWARE:default="Not updated", esp32c2="|ESP32-C2 低功耗蓝牙自适应测试固件|", esp32c3="|ESP32-C3 低功耗蓝牙自适应测试固件|", esp32c6="|ESP32-C6 低功耗蓝牙自适应测试固件|", esp32s3="|ESP32-S3 低功耗蓝牙自适应测试固件|", esp32h2="|ESP32-H2 低功耗蓝牙自适应测试固件|"}
 
 1. 打开 :ref:`download-tool`。
 
@@ -90,3 +90,9 @@
   reboot
 
 输入上述指令后，可继续进行低功耗蓝牙自适应测试。
+
+.. |ESP32-C2 低功耗蓝牙自适应测试固件| replace:: `ESP32-C2 低功耗蓝牙自适应测试固件 <https://dl.espressif.com/rf/esp32c2/ESP32C2_BLE_Adaptivity_bin_20230704.bin>`__
+.. |ESP32-C3 低功耗蓝牙自适应测试固件| replace:: `ESP32-C3 低功耗蓝牙自适应测试固件 <https://dl.espressif.com/rf/esp32c3/ESP32C3_BLE_Adaptivity_bin_20230704.bin>`__
+.. |ESP32-C6 低功耗蓝牙自适应测试固件| replace:: `ESP32-C6 低功耗蓝牙自适应测试固件 <https://dl.espressif.com/rf/esp32c6/ESP32C6_BLE_Adaptivity_bin_20230704.bin>`__
+.. |ESP32-S3 低功耗蓝牙自适应测试固件| replace:: `ESP32-S3 低功耗蓝牙自适应测试固件 <https://dl.espressif.com/rf/esp32s3/ESP32S3_BLE_Adaptivity_bin_20230704.bin>`__
+.. |ESP32-H2 低功耗蓝牙自适应测试固件| replace:: `ESP32-H2 低功耗蓝牙自适应测试固件 <https://dl.espressif.com/rf/esp32h2/ESP32H2_BLE_Adaptivity_bin_20230704.bin>`__

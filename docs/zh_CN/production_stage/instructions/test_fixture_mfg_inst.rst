@@ -388,4 +388,4 @@
 证书下载
 --------
 
-用户可通过乐鑫官网证书 `下载页面 <https://www.espressif.com/zh-hans/certificates>`_ 下载产品证书。
+用户可通过乐鑫官网证书 `下载页面 <https://www.espressif.com/zh-hans/certificates>`__ 下载产品证书。

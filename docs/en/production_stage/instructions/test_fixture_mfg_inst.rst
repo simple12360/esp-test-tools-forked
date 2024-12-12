@@ -388,4 +388,4 @@ The fixture manufacturers should deliver both of the items listed below:
 Certification
 -------------
 
-Download certificates for Espressif products from `Certificates <https://www.espressif.com/en/certificates>`_.
+Download certificates for Espressif products from `Certificates <https://www.espressif.com/en/certificates>`__.

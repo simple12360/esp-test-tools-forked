@@ -36,7 +36,7 @@ If the following information is printed on the serial port, the connection is su
 Test with ESPRFTestTool
 ^^^^^^^^^^^^^^^^^^^^^^^
 
-- Open the `EspRFTestTool package <https://dl.espressif.com/RF/EspRFTestTool_v3.6_Manual.zip>`_, configure ``ChipType`` and ``COM``, select 115200 for ``BaudRate``, open the port, and select the ``WiFi Adaptivity`` test interface.
+- Open the `EspRFTestTool package <https://dl.espressif.com/RF/EspRFTestTool_v3.6_Manual.zip>`__, configure ``ChipType`` and ``COM``, select 115200 for ``BaudRate``, open the port, and select the ``WiFi Adaptivity`` test interface.
 
 - In ``STA`` mode, enter ``AP ssid`` and ``AP pwd``, and click ``Connect AP`` to connect.
 

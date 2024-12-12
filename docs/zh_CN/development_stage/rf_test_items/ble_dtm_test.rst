@@ -14,7 +14,7 @@
 
     测试环境示意图
 
-- **电脑 (PC)** 通过 USB 与 USB-to-UART 转接板连接。电脑上需安装 `EspRFTestTool 工具包 <https://dl.espressif.com/RF/EspRFTestTool_v3.6_Manual.zip>`_、测试仪器控制软件、以及 USB-to-UART 转接板驱动。
+- **电脑 (PC)** 通过 USB 与 USB-to-UART 转接板连接。电脑上需安装 `EspRFTestTool 工具包 <https://dl.espressif.com/RF/EspRFTestTool_v3.6_Manual.zip>`__、测试仪器控制软件、以及 USB-to-UART 转接板驱动。
 - **测试仪器 (Tester)** 用于测试待测设备在不同模式下的射频性能。测试仪器通过射频连接线与待测设备连接传输射频信号，通常为 CMW500、CMW270、蓝牙测试仪 CBT 等。
 - **USB-to-UART 转接板 (USB-to-UART Board)** 用于实现电脑和待测设备之间的通信以及综测仪和待测设备之间的通信。
 - **待测设备 (DUT)** 为基于 {IDF_TARGET_NAME} 芯片或模组设计的产品。
@@ -41,7 +41,7 @@
 烧录固件
 ------------------
 
-{IDF_TARGET_BLE_DTM_FIRMWARE:default="未更新", esp32c2="`ESP32-C2 低功耗蓝牙 DTM 测试固件 <https://dl.espressif.com/rf/esp32c2/ESP32C2_DTM_HCI_CMD_26M_20230301.zip>`_", esp32c3="`ESP32-C3 低功耗蓝牙 DTM 测试固件 <https://dl.espressif.com/rf/esp32c3/ESP32C3_DTM_HCI_20230724.zip>`_", esp32c6="`ESP32-C6 低功耗蓝牙 DTM 测试固件 <https://dl.espressif.com/rf/esp32c6/ESP32C6-ECO1_DTM_HCI_d1caf30_20230407.zip>`_", esp32s3="`ESP32-S3 低功耗蓝牙 DTM 测试固件 <https://dl.espressif.com/rf/esp32s3/ESP32S3_BLE_HCI_cb74f83_20220518.zip>`_", esp32h2="`ESP32-H2 低功耗蓝牙 DTM 测试固件 <https://dl.espressif.com/rf/esp32h2/ESP32H2_BLE_DTM_Bin_20230811.bin>`_"}
+{IDF_TARGET_BLE_DTM_FIRMWARE:default="Not Updated", esp32c2="|ESP32-C2 低功耗蓝牙 DTM 测试固件|", esp32c3="|ESP32-C3 低功耗蓝牙 DTM 测试固件|", esp32c6="|ESP32-C6 低功耗蓝牙 DTM 测试固件|", esp32s3="|ESP32-S3 低功耗蓝牙 DTM 测试固件|", esp32h2="|ESP32-H2 低功耗蓝牙 DTM 测试固件|"}
 
 1. 打开 :ref:`download-tool`。
 
@@ -100,3 +100,9 @@
 
     //配置流控关闭，波特率设置为 115200
     bqb -z set_uart_param -f 0 -b 115200
+
+.. |ESP32-C2 低功耗蓝牙 DTM 测试固件| replace:: `ESP32-C2 低功耗蓝牙 DTM 测试固件 <https://dl.espressif.com/rf/esp32c2/ESP32C2_DTM_HCI_CMD_26M_20230301.zip>`__
+.. |ESP32-C3 低功耗蓝牙 DTM 测试固件| replace:: `ESP32-C3 低功耗蓝牙 DTM 测试固件 <https://dl.espressif.com/rf/esp32c3/ESP32C3_DTM_HCI_20230724.zip>`__
+.. |ESP32-C6 低功耗蓝牙 DTM 测试固件| replace:: `ESP32-C6 低功耗蓝牙 DTM 测试固件 <https://dl.espressif.com/rf/esp32c6/ESP32C6-ECO1_DTM_HCI_d1caf30_20230407.zip>`__
+.. |ESP32-S3 低功耗蓝牙 DTM 测试固件| replace:: `ESP32-S3 低功耗蓝牙 DTM 测试固件 <https://dl.espressif.com/rf/esp32s3/ESP32S3_BLE_HCI_cb74f83_20220518.zip>`__
+.. |ESP32-H2 低功耗蓝牙 DTM 测试固件| replace:: `ESP32-H2 低功耗蓝牙 DTM 测试固件 <https://dl.espressif.com/rf/esp32h2/ESP32H2_BLE_DTM_Bin_20230811.bin>`__
