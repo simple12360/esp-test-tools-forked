@@ -11,8 +11,8 @@ document.addEventListener("DOMContentLoaded", function () {
     script.setAttribute("data-button-border-radius", "50%");
     script.setAttribute("data-button-bg-color", "#38393a");
     script.setAttribute("data-button-border", "#38393a");
-    script.setAttribute("data-button-height", "52px");
-    script.setAttribute("data-button-width", "52px");
+    script.setAttribute("data-button-height", "45px");
+    script.setAttribute("data-button-width", "45px");
     script.setAttribute("data-button-animation-enabled", "false");
     script.setAttribute("data-button-image-height", "100%");
     script.setAttribute("data-button-image-width", "100%");
