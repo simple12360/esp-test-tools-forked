@@ -1,10 +1,9 @@
-
 document.addEventListener("DOMContentLoaded", function () {
     var script = document.createElement("script");
-    script.src = "https://widget.kapa.ai/kapa-widget.dev-20250326210540.bundle.js";
+    script.src = "https://widget.kapa.ai/kapa-widget.bundle.js";
     script.setAttribute("data-bot-protection-mechanism", "hcaptcha");
-    script.setAttribute("data-website-id", "9746d4c8-20ab-44f2-8b1d-1aef4a92f8ac");
-    script.setAttribute("data-project-name", "ESP Test Tools and Guidelines");
+    script.setAttribute("data-website-id", "de01355b-0be4-44fe-92f2-480c6ceed8b3");
+    script.setAttribute("data-modal-title", "ESP 测试工具与指南文档 AI 助手");
     script.setAttribute("data-project-color", "#C62817");
     script.setAttribute("data-project-logo", "https://dl.espressif.com/public/logo.png");
     script.setAttribute("data-button-image", "https://dl.espressif.com/chatbot/Chatbot.png");
@@ -24,8 +23,9 @@ document.addEventListener("DOMContentLoaded", function () {
     script.setAttribute("data-button-box-shadow", "0px 6px 12px 1px rgba(0,0,0,0.16)");
     script.setAttribute("data-modal-override-open-class", "test-ai");
     script.setAttribute("data-user-analytics-fingerprint-enabled", "true");
-    script.setAttribute("data-modal-disclaimer", "This custom large language model (LLM), trained on official documentation from espressif.com, is designed to provide technical support and answers related to Espressif’s products and services. Give it a try, share your thoughts, and let us know your feedback—we truly appreciate it! \n\n**Note**: AI-generated information may be incomplete or inaccurate. Always verify critical information with official sources.");
-    script.setAttribute("data-modal-example-questions", "What is EspRFTestTool Toolkit?,What is Flash Download Tool?");
+    script.setAttribute("data-modal-example-questions-title", "问题示例");
+    script.setAttribute("data-modal-disclaimer", "欢迎使用乐鑫文档智能问答助手！本助手基于乐鑫的公开文档，旨在为您提供产品和服务的技术支持与解答。如有任何意见或建议，欢迎留下反馈！\n\n**注意**：本回答由 AI 生成，可能存在不准确之处，请核实重要信息。");
+    script.setAttribute("data-modal-example-questions", "如何使用 EspRFTestTool 工具包?,如何使用 Flash 下载工具?");
     script.async = true;
     document.head.appendChild(script);
   });
