@@ -3,7 +3,7 @@ Wi-Fi Non-Signaling Test
 
 :link_to_translation:`zh_CN:[中文]`
 
-Wi-Fi Non-Signaling Test directly controls the device to transmit specific signals without establishing a data connection. It evaluates key RF performance metrics, such as transmit power, spectrum quality, and error rate, ensuring wireless communication quality in various scenarios.
+The Wi-Fi Non-Signaling Test, also known as fixed frequency test, is a method where specific signals are directly controlled and emitted by the device without establishing an actual data connection. This is used to evaluate the radio frequency performance of the device, such as transmission power, spectrum quality, and error rate, to ensure the quality of wireless communication in various environments.
 
 .. include:: rf_non_signalling_test_setup.inc
 
@@ -40,7 +40,7 @@ After clicking ``start``, the log window should print Wi-Fi transmission paramet
 
 The above parameters indicate that Wi-Fi packet transmission is normal, and the transmission performance can be detected with tester at this time.
 
-.. figure:: ../../../_static/rf_test_tool/esp32s3_wifi_test_on.png
+.. figure:: ../../../_static/rf_test_tool/esp_wifi_tx_on.png
     :align: center
     :scale: 80%
 
@@ -72,7 +72,7 @@ Where:
     - If ``Desired`` is not 0 and ``Correct`` is greater than ``Desired``, there is interference in the environment. Please retest in a shielded environment;
     - Other parameters in the packet RX information are only used for RD debug and have no actual meaning.
 
-.. figure:: ../../../_static/rf_test_tool/esp32c6_wifi_rx_on.png
+.. figure:: ../../../_static/rf_test_tool/esp_wifi_rx_on.png
     :align: center
     :scale: 80%
 

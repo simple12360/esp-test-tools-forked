@@ -53,7 +53,7 @@ Start Testing
 
 Bluetooth LE Adaptivity Test requires inputting corresponding serial port commands in both Mater and Slave devices to establish a connection for testing.
 
-Enter the commands in the Slave and Master devices in order:
+Open the serial port assistant and enter the corresponding commands on the Slave and Master devices in turn:
 
 1. **Slave Device**
 

@@ -16,7 +16,7 @@ Zigbee TX Performance Test
 - **Test Mode**:
 
   * ZB TX packet: Used for TX performance tests;
-  * ZB TX continue: Used for certification tests.
+  * ZB TX continue: High packet occupancy ratio, used for certification testing.
 
 - **Power Level**: Set the Zigbee TX power level, supporting 0~15 levels for testing.
 - **Channel**: Set the Zigbee test channel.
@@ -26,7 +26,7 @@ After clicking ``start``, the Zigbee TX parameter description is displayed in th
 
 ::
 
-    ZB TX start: len=127, chan=18, pwr=12, tx_num=0, contin_en=0
+    ZB TX start: len=127, chan=11, pwr=15, tx_num=0, contin_en=0
 
 This indicates that Zigbee is sending packets normally, and the TX performance can be detected using the tester.
 
@@ -46,13 +46,13 @@ After clicking ``start``, use the tester to send packets on the test channel. Cl
 
 ::
 
-    RX 1000 1 0 0 0 1 -52029 0 -27116 34913
+    RX 1000 1 1 0 0 0 -60058 0 -21398 38679
 
 Among them:
 
 - The first parameter Res[0] returns the string "RX".
 - The second parameter Res[1] (decimal) indicates the number of packets received at the corresponding rate in this test. In this test, Res[1] is 1000.
-- The fourth parameter from the end Res[7] (decimal) indicates the total RSSI of the packets received at the corresponding rate in this test. In this test, Res[7] is -52029.
+- The fourth last parameter, Res[7] (in decimal), represents the total RSSI of the packets received at the corresponding rate in this test. In this test, Res[7] is -60058.
 
 Based on the above parameters, you can calculate:
 

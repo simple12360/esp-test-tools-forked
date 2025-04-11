@@ -23,7 +23,7 @@ Set Up Test Environment
 
     - The CHIP_EN pin of the DUT is pulled up by default. If it is not pulled up in the product design, you need to manually connect the CHIP_EN to the 3V3 pin.
     - Some serial communication boards have already swapped RXD and TXD internally, so there is no need to reverse the connection. Adjust the wiring according to the actual situation.
-    - {IDF_TARGET_NAME} has a power-on self-calibration function, so the RF connection cable must be connected to the tester before the DUT is powered on for testing.
+    - {IDF_TARGET_NAME} has a power-on self-calibration feature. The RF cable must be connected to the test instrument before powering on the device under test.
 
 Conduction Test
 ^^^^^^^^^^^^^^^
@@ -41,25 +41,36 @@ Conduction Test
 Flash Firmware
 --------------
 
-{IDF_TARGET_BLE_DTM_FIRMWARE:default="Not Updated", esp32c2="|ESP32-C2 Bluetooth LE DTM Test Firmware|", esp32c3="|ESP32-C3 Bluetooth LE DTM Test Firmware|", esp32c6="|ESP32-C6 Bluetooth LE DTM Test Firmware|", esp32s3="|ESP32-S3 Bluetooth LE DTM Test Firmware|", esp32h2="|ESP32-H2 Bluetooth LE DTM Test Firmware|"}
+{IDF_TARGET_BLE_DTM_FIRMWARE:default="Not Updated", esp32="|ESP32 Bluetooth LE DTM Test Firmware|", esp32c2="|ESP32-C2 Bluetooth LE DTM Test Firmware (26 MHz) or ESP32-C2 Bluetooth LE DTM Test Firmware (40 MHz)|", esp32c3="|ESP32-C3 Bluetooth LE DTM Test Firmware|", esp32c6="|ESP32-C6 Bluetooth LE DTM Test Firmware|", esp32s3="|ESP32-S3 Bluetooth LE DTM Test Firmware|", esp32h2="|ESP32-H2 Bluetooth LE DTM Test Firmware|"}
 
 1. Open :ref:`download-tool`.
 
 2. Set ``ChipType``, ``Com Port``, ``Baud Rate``, click ``Open``, and select to download to ``Flash``.
 
-3. {IDF_TARGET_BLE_DTM_FIRMWARE} includes **bootloader.bin**, **partition-table.bin** and **ssc.bin** files. After decompressing {IDF_TARGET_BLE_DTM_FIRMWARE}, flash the three bin files to the following addresses via ``UART``.
+3. Flash the {IDF_TARGET_BLE_DTM_FIRMWARE} bin file to the following address via ``UART``.
 
-.. list-table::
-   :header-rows: 1
+.. only:: esp32
 
-   * - bin file
-     - Burn address
-   * - bootloader.bin
-     - 0x0
-   * - partition-table.bin
-     - 0x8000
-   * - ssc.bin
-     - 0x10000
+    .. list-table::
+      :header-rows: 1
+      :align: center
+
+      * - bin file
+        - Flash Address
+      * - {IDF_TARGET_BLE_DTM_FIRMWARE}
+        - 0x1000
+
+.. only:: not esp32
+
+    .. list-table::
+      :header-rows: 1
+      :align: center
+
+      * - bin file
+        - Flash address
+      * - {IDF_TARGET_BLE_DTM_FIRMWARE}
+        - 0x0
+
 
 .. only:: esp32
 
@@ -77,7 +88,7 @@ Flash Firmware
 
         Flash Firmware
 
-After the flashing is completed, continue the following steps for testing.
+After the flash process is completed, pull up or leave the boot pin unconnected. After the chip restarts and enters the working mode, continue with the following steps for testing.
 
 Start Testing
 -------------
@@ -86,23 +97,104 @@ The connection methods between the DUT and the tester includes HCI and 2-wire, w
 
 Based on the hardware connections described above, you can verify whether the firmware flashing was successful by checking the output from the UART0 serial port.
 
-Upon powering on, the device defaults to a power level of 12 dBm, operates without flow control, and uses a baud rate of 115200 for initialization. No commands are required, so you can directly begin the DTM test.
+.. only:: esp32
 
-If you need to adjust the UART1 settings, you can input the corresponding commands in real time via the UART0 port:
+    Upon power-up, it defaults to Power 6 dBm, with no flow control, and completes the initialization process at a baud rate of 115200. No input commands are required, and the DTM test can be started directly.
 
-::
+.. only:: not esp32
 
-    //Configure UART1, set the TX pin to GPIO4 and the RX pin to GPIO5
-    bqb -z reconfig_uart1_pin -t 4 -r 5
+    Upon power-up, it defaults to Power 12 dBm, with no flow control, and completes the initialization process at a baud rate of 115200. No command input is required, and the DTM test can be started directly.
 
-    //Configure TX output power, supporting power adjustments from level 0 to 15
-    bqb -z set_ble_tx_power -i 15
+    To adjust the relevant settings of UART1, you can input the corresponding commands in real time through the UART0 port:
 
-    //Configure flow control to be disabled and set the baud rate to 115200
-    bqb -z set_uart_param -f 0 -b 115200
+    ::
 
-.. |ESP32-C2 Bluetooth LE DTM Test Firmware| replace:: `ESP32-C2 Bluetooth LE DTM Test Firmware <https://dl.espressif.com/rf/esp32c2/ESP32C2_DTM_HCI_CMD_26M_20230301.zip>`__
-.. |ESP32-C3 Bluetooth LE DTM Test Firmware| replace:: `ESP32-C3 Bluetooth LE DTM Test Firmware <https://dl.espressif.com/rf/esp32c3/ESP32C3_DTM_HCI_20230724.zip>`__
-.. |ESP32-C6 Bluetooth LE DTM Test Firmware| replace:: `ESP32-C6 Bluetooth LE DTM Test Firmware <https://dl.espressif.com/rf/esp32c6/ESP32C6-ECO1_DTM_HCI_d1caf30_20230407.zip>`__
-.. |ESP32-S3 Bluetooth LE DTM Test Firmware| replace:: `ESP32-S3 Bluetooth LE DTM Test Firmware <https://dl.espressif.com/rf/esp32s3/ESP32S3_BLE_HCI_cb74f83_20220518.zip>`__
-.. |ESP32-H2 Bluetooth LE DTM Test Firmware| replace:: `ESP32-H2 Bluetooth LE DTM Test Firmware <https://dl.espressif.com/rf/esp32h2/ESP32H2_BLE_DTM_Bin_20230811.bin>`__
+        // Configure TX output power, supports power adjustment from 0 to 15 levels.
+        set_ble_tx_power -i 15
+
+        //Get the current configuration power of BLE
+        get_ble_tx_power
+
+        // Configure UART1, set TX pin to GPIO4, set RX pin to GPIO5
+        reconfig_dtm_uart_pin -t 4 -r 5
+
+.. |ESP32 Bluetooth LE DTM Test Firmware| replace:: `ESP32 Bluetooth LE DTM Test Firmware <https://dl.espressif.com/RF/ESP32_BLE_DTM_HCI_02e0d70_20250325.bin>`__
+.. |ESP32-C2 Bluetooth LE DTM Test Firmware (26 MHz) or ESP32-C2 Bluetooth LE DTM Test Firmware (40 MHz)| replace:: `ESP32-C2 Bluetooth LE DTM Test Firmware (26 MHz) <https://dl.espressif.com/RF/ESP32C2_DTM_HCI_1babaa3_26M_20250319.bin>`__ or `ESP32-C2 Bluetooth LE DTM Test Firmware (40 MHz) <https://dl.espressif.com/RF/ESP32C2_DTM_HCI_1babaa3_40M_20250319.bin>`__
+.. |ESP32-C3 Bluetooth LE DTM Test Firmware| replace:: `ESP32-C3 Bluetooth LE DTM Test Firmware <https://dl.espressif.com/RF/ESP32C3_DTM_HCI_01f2a49_20250319.bin>`__
+.. |ESP32-C6 Bluetooth LE DTM Test Firmware| replace:: `ESP32-C6 Bluetooth LE DTM Test Firmware <https://dl.espressif.com/RF/ESP32C6_ECO1_DTM_HCI_5b89037_20250319.bin>`__
+.. |ESP32-S3 Bluetooth LE DTM Test Firmware| replace:: `ESP32-S3 Bluetooth LE DTM Test Firmware <https://dl.espressif.com/RF/ESP32S3_DTM_HCI_a6008b2_20250319.bin>`__
+.. |ESP32-H2 Bluetooth LE DTM Test Firmware| replace:: `ESP32-H2 Bluetooth LE DTM Test Firmware <https://dl.espressif.com/RF/ESP32H2_DTM_HCI_823e7f8_20250319.bin>`__
+
+
+
+Appendix
+----------------
+
+This appendix is primarily used to explain the power levels of {IDF_TARGET_NAME} and the corresponding target power, for RF debugging or testing reference.
+
+.. only:: esp32
+
+  .. list-table:: {IDF_TARGET_NAME} Bluetooth/Bluetooth LE Transmit Power Level
+    :widths: 40 60
+
+    * - Power Level
+      - ESP32 Bluetooth/Bluetooth LE Transmit Power (dBm)
+    * - 0
+      - -12
+    * - 1
+      - -9
+    * - 2
+      - -6
+    * - 3
+      - -3
+    * - 4
+      - 0
+    * - 5
+      - 3
+    * - 6
+      - 6
+    * - 7
+      - 9
+
+.. only:: not esp32
+
+    Bluetooth LE Transmit Power Level
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+    .. list-table:: {IDF_TARGET_NAME} Bluetooth LE Transmit Power Levels
+        :widths: 40 60
+
+        * - Power Level
+          - Bluetooth LE Transmit Power (dBm)
+        * - 0
+          - -24
+        * - 1
+          - -21
+        * - 2
+          - -18
+        * - 3
+          - -15
+        * - 4
+          - -12
+        * - 5
+          - -9
+        * - 6
+          - -6
+        * - 7
+          - -3
+        * - 8
+          - 0
+        * - 9
+          - 3
+        * - 10
+          - 6
+        * - 11
+          - 9
+        * - 12
+          - 12
+        * - 13
+          - 15
+        * - 14
+          - 18
+        * - 15
+          - 20

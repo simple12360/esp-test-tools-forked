@@ -37,7 +37,7 @@ Start Testing
 
     ::
 
-        fcc_bt_tx:txpwr=4,hoppe=0,chan=18,rate=1,DH_type=1,data_type=1
+        fcc_bt_tx:txpwr=6,hoppe=0,chan=0,rate=1,DH_type=1,data_type=1
 
     This indicates that the Bluetooth packet TX is normal, and the TX performance can be tested with the tester.
 
@@ -45,7 +45,13 @@ Start Testing
         :align: center
         :scale: 80%
 
-        Bluetooth/Bluetooth LE TX Performance
+        Bluetooth Transmission Performance
+
+    .. figure:: ../../../_static/rf_test_tool/esp32_ble_tx_on.png
+        :align: center
+        :scale: 80%
+
+        Bluetooth LE Transmit Performance
 
     Bluetooth RX Performance Test
     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -120,7 +126,7 @@ Start Testing
     - **Test Mode**:
 
       * BLE50 TX: Used for TX performance tests;
-      * BLE50 TX continue: Used for certification tests.
+      * BLE50 TX continue: High packet duty cycle, used for certification testing.
 
     - **Power Level**: Set the Bluetooth LE TX power level, supporting 0~15 level test
     - **Channel**: Set the Bluetooth LE test channel
@@ -135,11 +141,11 @@ Start Testing
 
     ::
 
-        fcc_le_tx_syncw:txpwr=12,chan=0,len=250,data_type=0,syncw=0x71764129,rate=0,tx_num=0,contin_en=0,delay=0,hopp_en=0
+        fcc_le_tx_syncw:txpwr=15,chan=0,len=250,data_type=0,syncw=0x71764129,rate=0,tx_num=0,contin_en=0,delay=0,hopp_en=0
 
     This indicates that the Bluetooth LE packet TX is normal, and at this point, the tester can be used to test the TX performance.
 
-    .. figure:: ../../../_static/rf_test_tool/esp32c6_ble_test_on.png
+    .. figure:: ../../../_static/rf_test_tool/esp32c6_ble_tx_on.png
         :align: center
         :scale: 80%
 
@@ -148,9 +154,9 @@ Start Testing
     Bluetooth LE RX Performance Test
     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-    {IDF_TARGET_TWELFTH_PARA:default="received correct package", esp32c3="all packages", esp32s3="all packages"}
+    {IDF_TARGET_TWELFTH_PARA:default="Received correct package", esp32c3="Received correct package", esp32s3="Received correct package"}
 
-    {IDF_TARGET_RSSI:default="Res[11]/(Res[1])", esp32c3="Res[11]/(Res[1]+Res[4])", esp32s3="Res[11]/(Res[1]+Res[4])"}
+    {IDF_TARGET_RSSI:default="Res[11]/(Res[1])", esp32c3="Res[11]/(Res[1])", esp32s3="Res[11]/(Res[1])"}
 
     - **Test Mode**: Select BLE50 RX for Bluetooth LE RX performance test.
     - **Channel**: Set the Bluetooth LE test channel.
@@ -161,13 +167,13 @@ Start Testing
 
     ::
 
-        3e8 3e8 0 0 0 0 0 0 0 0 p -61009 -20424 0 40581
+        3e8 3e8 0 0 0 0 0 0 0 0 p -53276 -24131 0 29422
 
     Among them:
 
     - The 1st parameter Res[0] (hexadecimal) represents the total number of packages received in this test. In this test, the total number of packages is 3e8.
     - The 2nd parameter Res[1] (hexadecimal) represents the number of packages received at the corresponding rate in this test. In this test, the number of packages at the corresponding rate is 3e8.
-    - The 12th parameter Res[11] (decimal) represents the RSSI of {IDF_TARGET_TWELFTH_PARA} in this test. In this test, the RSSI is -61009.
+    - The 12th parameter Res[11] (in decimal) represents the RSSI of this test {IDF_TARGET_TWELFTH_PARA}. In this test, the RSSI is -53276.
 
     Based on the above parameters, you can calculate:
 
@@ -175,7 +181,7 @@ Start Testing
     - RSSI of each package = {IDF_TARGET_RSSI}
 
 
-      .. figure:: ../../../_static/rf_test_tool/esp32s3_ble_rx_on.png
+      .. figure:: ../../../_static/rf_test_tool/esp32c6_ble_rx_on.png
           :align: center
           :scale: 80%
 
