@@ -1,4 +1,4 @@
-EspRFTestTool Toolkit
+EspRFTestTool toolkit
 =====================
 
 :link_to_translation:`zh_CN:[中文]`
@@ -9,7 +9,7 @@ The **EspRFTestTool toolkit** is an RF test tool provided by Espressif. It conta
 - `DownloadTool`_: Used to download the firmware required for RF tests;
 - `PowerLimitTool`_: Used to generate customized phy_init_data firmware.
 
-**Download Link**: `EspRFTestTool Toolkit <https://dl.espressif.com/RF/EspRFTestTool_v4.6_Manual.zip>`__
+**Download Link**: `EspRFTestTool toolkit <https://dl.espressif.com/RF/EspRFTestTool_v4.6_Manual.zip>`__
 
 The zip file not only includes the EspRFTestTool toolkit but also contains all the necessary firmware for :doc:`RF Test Items <../rf_test_items/index>`, allowing users familiar with the testing process to directly use the firmware for testing.
 
@@ -223,15 +223,15 @@ Under the main interface of EspRFTestTool, click ``Tool``, and select ``PowerLim
 
 {IDF_TARGET_RF_NON_SIGNALING_FIRMWARE_ADDRESS:default="0x0", esp32="0x1000", esp32s2="0x1000"}
 
-5. Verify whether phy_init_bin is effective using Non-Signaling or Signaling Test. Taking Non-Signaling Test as an example, first use the `DownloadTool tool`_ to download the generated phy_init_bin file to the product to be tested.
+5. Verify whether phy_init_bin is effective using Non-Signaling or Signaling Test. Taking Non-Signaling Test as an example, first use the `DownloadTool`_ to download the generated phy_init_bin file to the testing product.
 
 - Select ``DownloadTool`` from ``Tool`` dropdown list to enter the ``DownloadTool`` interface.
 - Flash the phy_init_bin file and corresponding RF test firmware to ``flash`` by referring to the instructions stated `DownloadTool`_.
-- The flash address for phy_init_bin is ``0x1fc000``, and the flash address for the RF test firmware {IDF_TARGET_RF_NON_SIGNALING_FIRMWARE_COPY} is {IDF_TARGET_RF_NON_SIGNALING_FIRMWARE_ADDRESS}.
+- The flash address for phy_init_bin is ``0x1fc000`` and the flash address for the RF test firmware {IDF_TARGET_RF_NON_SIGNALING_FIRMWARE_COPY} is {IDF_TARGET_RF_NON_SIGNALING_FIRMWARE_ADDRESS}.
 
 .. note::
 
-    Regarding the signaling test, you can simply replace the original phy_init_bin. Please refer to the relevant documents in :doc:`RF Test Items <../rf_test_items/index>`.
+    Regarding the Signaling Test, you can simply replace the original phy_init_bin. Please refer to the relevant documents in :doc:`RF Test Items <../rf_test_items/index>`.
 
 .. figure:: ../../../_static/rf_test_tool/phyinit_download_start.png
     :align: center
@@ -239,7 +239,7 @@ Under the main interface of EspRFTestTool, click ``Tool``, and select ``PowerLim
 
     Flash phy_init_bin File
 
-6. Use the Wi-Fi instrument to test the output power and confirm whether phy_init_bin is effective.
+6. Use a Wi-Fi tester to measure the output power and check whether phy_init_bin is effective.
 
 - Open `EspRFTestTool`_.
 - Select corresponding ``ChipType``, ``COM``, ``BaudRate``, and click ``Open`` to open the serial port.
@@ -247,7 +247,7 @@ Under the main interface of EspRFTestTool, click ``Tool``, and select ``PowerLim
 - Set ``Attenuation`` to 0, and ``Duty Cycle`` to 10%.
 - With ``Certification EN`` unchecked, i.e., Phy init not enabled, the tool tests the initial performance of modules.
 - With ``Certification EN`` checked, i.e., Phy init enabled, the tool tests the performance for certification.
-- The default address for flashing phy_init_bin is 0x1fc000. If the flashing address changes, corresponding adjustments need to be made here.
+- The default address for flashing phy_init_bin is 0x1fc000. If the flashing address changes, update it here.
 - For Multiple Country, you can select the certification country codes it includes in the ``Certification Code``.
 
 .. figure:: ../../../_static/rf_test_tool/powerlimittool_rf_test_setting.png
@@ -295,7 +295,7 @@ Under the main interface of EspRFTestTool, click ``Tool``, and select ``PowerLim
         :widths: 20 20
         :align: center
 
-        * - Transmission rate
+        * - Rates
           - Typical Average Output Power (dBm)
         * - 11b 1M
           - 21
@@ -349,7 +349,7 @@ Under the main interface of EspRFTestTool, click ``Tool``, and select ``PowerLim
         :widths: 20 20
         :align: center
 
-        * - Transmission rate
+        * - Rates
           - Typical Average Output Power (dBm)
         * - 11b 1M
           - 20.5
@@ -408,7 +408,7 @@ Under the main interface of EspRFTestTool, click ``Tool``, and select ``PowerLim
         :widths: 20 20
         :align: center
 
-        * - Transmission rate
+        * - Rates
           - Typical Average Output Power (dBm)
         * - 11b 1M
           - 21

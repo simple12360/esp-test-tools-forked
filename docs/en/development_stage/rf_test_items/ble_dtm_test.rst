@@ -23,7 +23,7 @@ Set Up Test Environment
 
     - The CHIP_EN pin of the DUT is pulled up by default. If it is not pulled up in the product design, you need to manually connect the CHIP_EN to the 3V3 pin.
     - Some serial communication boards have already swapped RXD and TXD internally, so there is no need to reverse the connection. Adjust the wiring according to the actual situation.
-    - {IDF_TARGET_NAME} has a power-on self-calibration feature. The RF cable must be connected to the test instrument before powering on the device under test.
+    - {IDF_TARGET_NAME} has a power-on self-calibration feature. The RF connection cable must be connected to the tester before the DUT is powered on for testing.
 
 Conduction Test
 ^^^^^^^^^^^^^^^
@@ -55,7 +55,7 @@ Flash Firmware
       :header-rows: 1
       :align: center
 
-      * - bin file
+      * - Bin File
         - Flash Address
       * - {IDF_TARGET_BLE_DTM_FIRMWARE}
         - 0x1000
@@ -66,8 +66,8 @@ Flash Firmware
       :header-rows: 1
       :align: center
 
-      * - bin file
-        - Flash address
+      * - Bin File
+        - Flash Address
       * - {IDF_TARGET_BLE_DTM_FIRMWARE}
         - 0x0
 
@@ -99,23 +99,23 @@ Based on the hardware connections described above, you can verify whether the fi
 
 .. only:: esp32
 
-    Upon power-up, it defaults to Power 6 dBm, with no flow control, and completes the initialization process at a baud rate of 115200. No input commands are required, and the DTM test can be started directly.
+    Upon powering on, the device defaults to a power level of 6 dBm, operates without flow control, and uses a baud rate of 115200 for initialization. No commands are required, so you can directly begin the DTM test.
 
 .. only:: not esp32
 
-    Upon power-up, it defaults to Power 12 dBm, with no flow control, and completes the initialization process at a baud rate of 115200. No command input is required, and the DTM test can be started directly.
+    Upon powering on, the device defaults to a power level of 12 dBm, operates without flow control, and uses a baud rate of 115200 for initialization. No commands are required, so you can directly begin the DTM test.
 
     To adjust the relevant settings of UART1, you can input the corresponding commands in real time through the UART0 port:
 
     ::
 
-        // Configure TX output power, supports power adjustment from 0 to 15 levels.
+        // Configure TX output power. The supported power adjustment range is from 0 to 15 levels.
         set_ble_tx_power -i 15
 
-        //Get the current configuration power of BLE
+        // Get the current configuration power of BLE.
         get_ble_tx_power
 
-        // Configure UART1, set TX pin to GPIO4, set RX pin to GPIO5
+        // Configure UART1, set TX pin to GPIO4 and RX pin to GPIO5.
         reconfig_dtm_uart_pin -t 4 -r 5
 
 .. |ESP32 Bluetooth LE DTM Test Firmware| replace:: `ESP32 Bluetooth LE DTM Test Firmware <https://dl.espressif.com/RF/ESP32_BLE_DTM_HCI_02e0d70_20250325.bin>`__
@@ -130,11 +130,11 @@ Based on the hardware connections described above, you can verify whether the fi
 Appendix
 ----------------
 
-This appendix is primarily used to explain the power levels of {IDF_TARGET_NAME} and the corresponding target power, for RF debugging or testing reference.
+This appendix provides the mapping of power levels and target power of {IDF_TARGET_NAME} for RF debugging or testing reference.
 
 .. only:: esp32
 
-  .. list-table:: {IDF_TARGET_NAME} Bluetooth/Bluetooth LE Transmit Power Level
+  .. list-table:: {IDF_TARGET_NAME} Bluetooth/Bluetooth LE Transmit Power Levels
     :widths: 40 60
 
     * - Power Level

@@ -19,7 +19,7 @@ The RF non-signaling test firmware environment mainly includes a PC, tester, a U
 
     - The CHIP_EN pin of the DUT is pulled up by default. If it is not pulled up in the product design, you need to manually connect the CHIP_EN to the 3V3 pin.
     - Some serial communication boards have already swapped RXD and TXD internally, so there is no need to reverse the connection. Adjust the wiring according to the actual situation.
-    - {IDF_TARGET_NAME} has a power-on self-calibration feature. The RF cable must be connected to the test instrument before the device under test is powered on for testing.
+    - {IDF_TARGET_NAME} has a power-on self-calibration feature. The RF connection cable must be connected to the tester before the DUT is powered on for testing.
 
 Conduction Test
 ^^^^^^^^^^^^^^^

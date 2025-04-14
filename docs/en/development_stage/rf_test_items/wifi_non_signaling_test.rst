@@ -3,7 +3,7 @@ Wi-Fi Non-Signaling Test
 
 :link_to_translation:`zh_CN:[中文]`
 
-The Wi-Fi Non-Signaling Test, also known as fixed frequency test, is a method where specific signals are directly controlled and emitted by the device without establishing an actual data connection. This is used to evaluate the radio frequency performance of the device, such as transmission power, spectrum quality, and error rate, to ensure the quality of wireless communication in various environments.
+The Wi-Fi Non-Signaling Test, also known as fixed frequency test, directly controls the device to transmit specific signals without establishing a data connection. It evaluates key RF performance metrics, such as transmit power, spectrum quality, and error rate, ensuring wireless communication quality in various scenarios.
 
 .. include:: rf_non_signalling_test_setup.inc
 

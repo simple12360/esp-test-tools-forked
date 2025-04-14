@@ -126,7 +126,7 @@ Start Testing
     - **Test Mode**:
 
       * BLE50 TX: Used for TX performance tests;
-      * BLE50 TX continue: High packet duty cycle, used for certification testing.
+      * BLE50 TX continue: High packet duty cycle used for certification testing.
 
     - **Power Level**: Set the Bluetooth LE TX power level, supporting 0~15 level test
     - **Channel**: Set the Bluetooth LE test channel
@@ -154,7 +154,7 @@ Start Testing
     Bluetooth LE RX Performance Test
     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-    {IDF_TARGET_TWELFTH_PARA:default="Received correct package", esp32c3="Received correct package", esp32s3="Received correct package"}
+    {IDF_TARGET_TWELFTH_PARA:default="received correct package", esp32c3="received correct package", esp32s3="received correct package"}
 
     {IDF_TARGET_RSSI:default="Res[11]/(Res[1])", esp32c3="Res[11]/(Res[1])", esp32s3="Res[11]/(Res[1])"}
 

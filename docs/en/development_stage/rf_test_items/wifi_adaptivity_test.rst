@@ -43,7 +43,7 @@ Enter the following commands in the serial port in sequence for network configur
 
     The ``-p`` parameter is used to set the AP password. If the AP has no password, this parameter is not needed.
 
-If the following similar information is printed in the serial port, it indicates that the stream has been started and the Wi-Fi Adaptivity Test can be initiated.
+If the following similar information is printed in the serial port, it indicates that the traffic has been started and the Wi-Fi Adaptivity Test can be initiated.
 
 .. figure:: ../../../_static/rf_test_tool/wifi_adptive_log.png
     :align: center
@@ -66,11 +66,11 @@ Test Using EspRFTestTool Tool
 
     Device Network Provisioning
 
-- After a successful connection, set ``Pakcet Num`` to a sufficiently large value, such as 20000000, to meet the longer run stream test time.
+- After a successful connection, set ``Pakcet Num`` to a sufficiently large value—such as 20000000—to ensure the traffic can run for a long duration.
 
 - Set ``Server PORT`` to 8080, ``Socket ID`` to 54, and change ``Packet Delay`` to 1 to meet certification requirements.
 
-- After the above settings are completed, click ``Send Data``. If the log is similar to the figure below, it indicates that the stream has been started, and the Wi-Fi Adaptivity Test can be initiated.
+- After the above settings are completed, click ``Send Data``. If the log is similar to the figure below, it indicates that the traffic has been started, and the Wi-Fi Adaptivity Test can be initiated.
 
 .. figure:: ../../../_static/rf_test_tool/wifi_adptive_senddata.png
     :align: center

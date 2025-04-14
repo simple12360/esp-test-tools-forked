@@ -16,7 +16,7 @@ Zigbee TX Performance Test
 - **Test Mode**:
 
   * ZB TX packet: Used for TX performance tests;
-  * ZB TX continue: High packet occupancy ratio, used for certification testing.
+  * ZB TX continue: High packet duty cycle used for certification testing.
 
 - **Power Level**: Set the Zigbee TX power level, supporting 0~15 levels for testing.
 - **Channel**: Set the Zigbee test channel.

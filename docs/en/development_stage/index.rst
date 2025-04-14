@@ -20,7 +20,7 @@ RF Test Items
    Wi-Fi Test
    ----------
 
-   - :doc:`Wi-Fi Non-Signaling Test <rf_test_items/wifi_non_signaling_test>` also known as fixed frequency test, directly controls the device to emit specific signals without establishing an actual data connection. It is used to evaluate the RF performance of the device, such as transmission power, spectrum quality, and error rate, to ensure the quality of wireless communication in various environments.
+   - :doc:`Wi-Fi Non-Signaling Test <rf_test_items/wifi_non_signaling_test>` also known as fixed frequency test, directly controls the device to transmit specific signals without establishing a data connection. It evaluates key RF performance metrics, such as transmit power, spectrum quality, and error rate, ensuring wireless communication quality in various scenarios.
 
    - :doc:`Wi-Fi Signaling Test </development_stage/rf_test_items/wifi_signaling_test>` assesses and verifies the Wi-Fi signaling functions of wireless network devices, focusing on stable and reliable communication across different operating scenarios. It evaluates the Over-The-Air (OTA) performance, including Total Radiated Power (TRP) and Total Isotropic Sensitivity (TIS).
 
@@ -43,7 +43,7 @@ RF Test Items
 
 .. only:: not esp8266 and not esp32 and not esp32s2
 
-   - :doc:`Bluetooth LE Adaptivity Test <rf_test_items/ble_adaptivity_test>` ensures that the device operates in a frequency-hopping manner and when the power spectral density (PSD) of the Bluetooth LE signal is greater than 10 dBm/MHz, it meets certain parameter requirements to avoid interference with other wireless devices.
+   - :doc:`Bluetooth LE Adaptivity Test </development_stage/rf_test_items/ble_adaptivity_test>` ensures the device meets performance criteria during frequency hopping, particularly when the Power Spectral Density (PSD) of the Bluetooth LE signal exceeds 10 dBm/MHz, avoiding interference with other wireless devices.
 
 .. only:: esp32c6 or esp32h2
 
