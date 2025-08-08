@@ -25,9 +25,9 @@ The **Device Under Test (DUT)** is a product designed based on Espressif chips o
 Flash Firmware
 --------------
 
-{IDF_TARGET_WIFI_SIGNALLING_SINGLE_FIRMWARE:default="Not updated", esp32="|ESP32 Wi-Fi Signaling Test Firmware (Single Country)|", esp32c2="|ESP32-C2 Wi-Fi Signaling Test Firmware (Single Country)|", esp32c3="|ESP32-C3 Wi-Fi Signaling Test Firmware (Single Country)|"}
+{IDF_TARGET_WIFI_SIGNALLING_SINGLE_FIRMWARE:default="Not updated", esp32="|ESP32 Wi-Fi Signaling Test Firmware (Single Country)|", esp32c2="|ESP32-C2 Wi-Fi Signaling Test Firmware (Single Country)|", esp32c6="|ESP32-C6 Wi-Fi Signaling Test Firmware (Single Country)|", esp32c3="|ESP32-C3 Wi-Fi Signaling Test Firmware (Single Country)|"}
 
-{IDF_TARGET_WIFI_SIGNALLING_MULTIPLE_FIRMWARE:default="Not updated", esp32="|ESP32 Wi-Fi Signaling Test Firmware (Multiple Countries)|", esp32c2="|ESP32-C2 Wi-Fi Signaling Test Firmware (Multiple Countries)|", esp32c3="|ESP32-C3 Wi-Fi Signaling Test Firmware (Multiple Countries)|"}
+{IDF_TARGET_WIFI_SIGNALLING_MULTIPLE_FIRMWARE:default="Not updated", esp32="|ESP32 Wi-Fi Signaling Test Firmware (Multiple Countries)|", esp32c2="|ESP32-C2 Wi-Fi Signaling Test Firmware (Multiple Countries)|", esp32c6="|ESP32-C6 Wi-Fi Signaling Test Firmware (Multiple Countries)|", esp32c3="|ESP32-C3 Wi-Fi Signaling Test Firmware (Multiple Countries)|"}
 
 {IDF_TARGET_FLASH_ADDRESS:default="0x0", esp32="0x1000", esp32s2="0x1000"}
 
@@ -118,12 +118,16 @@ After the device under test is successfully connected, you can use the RF test i
 
 .. |ESP32 Wi-Fi Signaling Test Firmware (Single Country)| replace:: `ESP32 Wi-Fi Signaling Test Firmware (Single Country) <https://dl.espressif.com/rf/esp32/ESP32ECO3_Signaling_V4.3_SinglePhy_20230525.zip>`__
 
-.. |ESP32-C2 Wi-Fi Signaling Test Firmware (Single Country)| replace:: `ESP32-C2 Wi-Fi Signaling Test Firmware (Single Country) <https://dl.espressif.com/rf/esp32c2/ESP32C2_v5.2_ae9dde6_SinglePhy_20240416.zip>`__
+.. |ESP32-C2 Wi-Fi Signaling Test Firmware (Single Country)| replace:: `ESP32-C2 Wi-Fi Signaling Test Firmware (Single Country) <https://dl.espressif.com/RF/ESP32C2_v5.0_e255ce0_26M_singlephy_20250430.zip>`__
 
-.. |ESP32-C3 Wi-Fi Signaling Test Firmware (Single Country)| replace:: `ESP32-C3 Wi-Fi Signaling Test Firmware (Single Country) <https://dl.espressif.com/rf/esp32c3/ESP32C3_V4.3_891217b_SinglePhy_20220627.zip>`__
+.. |ESP32-C3 Wi-Fi Signaling Test Firmware (Single Country)| replace:: `ESP32-C3 Wi-Fi Signaling Test Firmware (Single Country) <https://dl.espressif.com/RF/ESP32C3_v5.5_402fb258_singlephy_20250722.zip>`__
 
 .. |ESP32 Wi-Fi Signaling Test Firmware (Multiple Countries)| replace:: `ESP32 Wi-Fi Signaling Test Firmware (Multiple Countries) <https://dl.espressif.com/rf/esp32/ESP32ECO3_Signaling_V4.3_MultiPhy_20230525.zip>`__
 
-.. |ESP32-C2 Wi-Fi Signaling Test Firmware (Multiple Countries)| replace:: `ESP32-C2 Wi-Fi Signaling Test Firmware (Multiple Countries) <https://dl.espressif.com/rf/esp32c2/ESP32C2_v5.2_ae9dde6_MultiplePhy_20240416.zip>`__
+.. |ESP32-C2 Wi-Fi Signaling Test Firmware (Multiple Countries)| replace:: `ESP32-C2 Wi-Fi Signaling Test Firmware (Multiple Countries) <https://dl.espressif.com/RF/ESP32C2_v5.0_e255ce0_26M_multiphy_20250430.zip>`__
 
-.. |ESP32-C3 Wi-Fi Signaling Test Firmware (Multiple Countries)| replace:: `ESP32-C3 Wi-Fi Signaling Test Firmware (Multiple Countries) <https://dl.espressif.com/rf/esp32c3/ESP32C3_V4.3_891217b_MultiPhy_20220627.zip>`__
+.. |ESP32-C3 Wi-Fi Signaling Test Firmware (Multiple Countries)| replace:: `ESP32-C3 Wi-Fi Signaling Test Firmware (Multiple Countries) <https://dl.espressif.com/RF/ESP32C3_v5.5_402fb258_multiphy_20250722.zip>`__
+
+.. |ESP32-C6 Wi-Fi Signaling Test Firmware (Single Country)| replace:: `ESP32-C6 Wi-Fi Signaling Test Firmware (Single Country) <https://dl.espressif.com/RF/ESP32-C6_v5.4.2_d12e5a3_SinglePhy_20250808.zip>`__
+
+.. |ESP32-C6 Wi-Fi Signaling Test Firmware (Multiple Countries)| replace:: `ESP32-C6 Wi-Fi Signaling Test Firmware (Multiple Countries) <https://dl.espressif.com/RF/ESP32-C6_v5.4.2_d12e5a3_MultiplePhy_20250808.zip>`__

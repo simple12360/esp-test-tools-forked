@@ -25,9 +25,9 @@ Wi-Fi 信令测试用于评估和验证无线网络设备 Wi-Fi 信令功能，�
 烧录固件
 ------------------
 
-{IDF_TARGET_WIFI_SIGNALLING_SINGLE_FIRMWARE:default="未更新", esp32="|ESP32 Wi-Fi 信令测试固件（单国）|", esp32c2="|ESP32-C2 Wi-Fi 信令测试固件（单国）|", esp32c3="|ESP32-C3 Wi-Fi 信令测试固件（单国）|"}
+{IDF_TARGET_WIFI_SIGNALLING_SINGLE_FIRMWARE:default="未更新", esp32="|ESP32 Wi-Fi 信令测试固件（单国）|", esp32c2="|ESP32-C2 Wi-Fi 信令测试固件（单国）|", esp32c6="|ESP32-C6 Wi-Fi 信令测试固件（单国）|", esp32c3="|ESP32-C3 Wi-Fi 信令测试固件（单国）|"}
 
-{IDF_TARGET_WIFI_SIGNALLING_MULTIPLE_FIRMWARE:default="未更新", esp32="|ESP32 Wi-Fi 信令测试固件（多国）|", esp32c2="|ESP32-C2 Wi-Fi 信令测试固件（多国）|", esp32c3="|ESP32-C3 Wi-Fi 信令测试固件（多国）|"}
+{IDF_TARGET_WIFI_SIGNALLING_MULTIPLE_FIRMWARE:default="未更新", esp32="|ESP32 Wi-Fi 信令测试固件（多国）|", esp32c2="|ESP32-C2 Wi-Fi 信令测试固件（多国）|", esp32c6="|ESP32-C6 Wi-Fi 信令测试固件（多国）|", esp32c3="|ESP32-C3 Wi-Fi 信令测试固件（多国）|"}
 
 {IDF_TARGET_FLASH_ADDRESS:default="0x0", esp32="0x1000", esp32s2="0x1000"}
 
@@ -118,12 +118,16 @@ station 设备分配到 IP 地址后，表明 Wi-Fi 连接成功，会打印如�
 
 .. |ESP32 Wi-Fi 信令测试固件（单国）| replace:: `ESP32 Wi-Fi 信令测试固件（单国） <https://dl.espressif.com/rf/esp32/ESP32ECO3_Signaling_V4.3_SinglePhy_20230525.zip>`__
 
-.. |ESP32-C2 Wi-Fi 信令测试固件（单国）| replace:: `ESP32-C2 Wi-Fi 信令测试固件（单国） <https://dl.espressif.com/rf/esp32c2/ESP32C2_v5.2_ae9dde6_SinglePhy_20240416.zip>`__
+.. |ESP32-C2 Wi-Fi 信令测试固件（单国）| replace:: `ESP32-C2 Wi-Fi 信令测试固件（单国） <https://dl.espressif.com/RF/ESP32C2_v5.0_e255ce0_26M_singlephy_20250430.zip>`__
 
-.. |ESP32-C3 Wi-Fi 信令测试固件（单国）| replace:: `ESP32-C3 Wi-Fi 信令测试固件（单国） <https://dl.espressif.com/rf/esp32c3/ESP32C3_V4.3_891217b_SinglePhy_20220627.zip>`__
+.. |ESP32-C3 Wi-Fi 信令测试固件（单国）| replace:: `ESP32-C3 Wi-Fi 信令测试固件（单国） <https://dl.espressif.com/RF/ESP32C3_v5.5_402fb258_singlephy_20250722.zip>`__
 
 .. |ESP32 Wi-Fi 信令测试固件（多国）| replace:: `ESP32 Wi-Fi 信令测试固件（多国） <https://dl.espressif.com/rf/esp32/ESP32ECO3_Signaling_V4.3_MultiPhy_20230525.zip>`__
 
-.. |ESP32-C2 Wi-Fi 信令测试固件（多国）| replace:: `ESP32-C2 Wi-Fi 信令测试固件（多国） <https://dl.espressif.com/rf/esp32c2/ESP32C2_v5.2_ae9dde6_MultiplePhy_20240416.zip>`__
+.. |ESP32-C2 Wi-Fi 信令测试固件（多国）| replace:: `ESP32-C2 Wi-Fi 信令测试固件（多国） <https://dl.espressif.com/RF/ESP32C2_v5.0_e255ce0_26M_multiphy_20250430.zip>`__
 
-.. |ESP32-C3 Wi-Fi 信令测试固件（多国）| replace:: `ESP32-C3 Wi-Fi 信令测试固件（多国） <https://dl.espressif.com/rf/esp32c3/ESP32C3_V4.3_891217b_MultiPhy_20220627.zip>`__
+.. |ESP32-C3 Wi-Fi 信令测试固件（多国）| replace:: `ESP32-C3 Wi-Fi 信令测试固件（多国） <https://dl.espressif.com/RF/ESP32C3_v5.5_402fb258_multiphy_20250722.zip>`__
+
+.. |ESP32-C6 Wi-Fi 信令测试固件（单国）| replace:: `ESP32-C6 Wi-Fi 信令测试固件（单国） <https://dl.espressif.com/RF/ESP32-C6_v5.4.2_d12e5a3_SinglePhy_20250808.zip>`__
+
+.. |ESP32-C6 Wi-Fi 信令测试固件（多国）| replace:: `ESP32-C6 Wi-Fi 信令测试固件（多国） <https://dl.espressif.com/RF/ESP32-C6_v5.4.2_d12e5a3_MultiplePhy_20250808.zip>`__
